@@ -49,19 +49,28 @@ function counter_chop_item() {
 			and mouse_hovering
 			and mouse_check_button(mb_right)
 		{
+			currently_chopping = true;
 			chop_timer -= 1;
+		}
+		else {
+			currently_chopping = false;
+			if instance_exists(obj_chop_overlay) {
+				instance_destroy(obj_chop_overlay);
+			}
 		}
 		return;
 	}
 	
 	// Set the relative chopped item
-	show_debug_message("#### HERE ###");
-	show_debug_message(currently_holding.name);
+	currently_chopping = false;
+	if instance_exists(obj_chop_overlay) {
+		instance_destroy(obj_chop_overlay);
+	}
+	
 	switch currently_holding.name {
 		case "tomato":
 			currently_holding = obj_ingredient_manager.all_ingredients.tomato_chopped;
 			chop_timer = -1;
-			show_debug_message(currently_holding);
 			return;
 	}
 }

@@ -25,6 +25,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_counter","order":3,"path":"objects/obj_counter/obj_counter.yy",},
     {"name":"spr_stove_top","order":1,"path":"sprites/spr_stove_top/spr_stove_top.yy",},
+    {"name":"obj_chop_overlay","order":4,"path":"objects/obj_chop_overlay/obj_chop_overlay.yy",},
     {"name":"obj_ingredient_manager","order":1,"path":"objects/obj_ingredient_manager/obj_ingredient_manager.yy",},
     {"name":"utils","order":2,"path":"scripts/utils/utils.yy",},
     {"name":"counter","order":3,"path":"scripts/counter/counter.yy",},
@@ -36,6 +37,7 @@
     {"name":"obj_stove_top","order":1,"path":"objects/obj_stove_top/obj_stove_top.yy",},
     {"name":"obj_par_environment","order":1,"path":"objects/obj_par_environment/obj_par_environment.yy",},
     {"name":"obj_trashcan","order":2,"path":"objects/obj_trashcan/obj_trashcan.yy",},
+    {"name":"spr_chop_overlay","order":2,"path":"sprites/spr_chop_overlay/spr_chop_overlay.yy",},
     {"name":"obj_temp_helper_hot_keys","order":2,"path":"objects/obj_temp_helper_hot_keys/obj_temp_helper_hot_keys.yy",},
     {"name":"spr_player_idle","order":1,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
     {"name":"_notes","order":3,"path":"scripts/_notes/_notes.yy",},

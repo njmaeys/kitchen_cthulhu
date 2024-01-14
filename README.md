@@ -15,6 +15,7 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | Item | Notes | Status |
 |----------|:-------------:|------:|
 | ~~Take items from fridge~~ | N/A | Done |
+| Take items from fridge Interface | N/A | In Progress |
 | ~~Chop items~~ | N/A | Done |
 | Cook Burger | N/A | Not Started |
 | Plate Items | N/A | Not Started |

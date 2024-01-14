@@ -21,3 +21,5 @@ currently_holding = -1;
 // Chop timer - Track how long it has left to be chopped.
 // If the item get's picked up it resets
 chop_timer = -1;
+currently_chopping = false;
+

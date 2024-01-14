@@ -11,9 +11,13 @@ if currently_holding == -1 {
 	counter_place_item();
 }
 else {
-	counter_take_item();
+	if !currently_chopping {
+		counter_take_item();
+	}
 	counter_chop_item();
 }
+
+
 
 
 // Depth sort
