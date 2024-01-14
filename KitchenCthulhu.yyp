@@ -28,6 +28,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Scripts/player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Objects/player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"tile_sets","folderPath":"folders/Sprites/tile_sets.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"kitchen","folderPath":"folders/Sprites/kitchen.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"kitchen","folderPath":"folders/Objects/kitchen.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"tileset.aseprite","CopyToMask":-1,"filePath":"datafiles",},
@@ -40,14 +42,17 @@
   "resources": [
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},},
+    {"id":{"name":"utils","path":"scripts/utils/utils.yy",},},
     {"id":{"name":"movement","path":"scripts/movement/movement.yy",},},
+    {"id":{"name":"obj_fridge","path":"objects/obj_fridge/obj_fridge.yy",},},
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+    {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},},
     {"id":{"name":"ts_main","path":"tilesets/ts_main/ts_main.yy",},},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
+    {"id":{"name":"spr_fridge","path":"sprites/spr_fridge/spr_fridge.yy",},},
     {"id":{"name":"rm_kitchen","path":"rooms/rm_kitchen/rm_kitchen.yy",},},
   ],
   "RoomOrderNodes": [

@@ -16,8 +16,11 @@
     {"name":"player","order":1,"path":"folders/Scripts/player.yy",},
     {"name":"player","order":3,"path":"folders/Objects/player.yy",},
     {"name":"tile_sets","order":5,"path":"folders/Sprites/tile_sets.yy",},
+    {"name":"kitchen","order":6,"path":"folders/Sprites/kitchen.yy",},
+    {"name":"kitchen","order":4,"path":"folders/Objects/kitchen.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"utils","order":2,"path":"scripts/utils/utils.yy",},
     {"name":"obj_par_environment","order":1,"path":"objects/obj_par_environment/obj_par_environment.yy",},
     {"name":"spr_player_idle","order":1,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
   ],
