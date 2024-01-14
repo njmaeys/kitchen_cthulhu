@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fridge",
+  "name": "obj_counter",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_fridge",
-    "path": "sprites/spr_fridge/spr_fridge.yy",
+    "name": "spr_counter",
+    "path": "sprites/spr_counter/spr_counter.yy",
   },
   "spriteMaskId": null,
   "visible": true,

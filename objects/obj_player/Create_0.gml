@@ -11,3 +11,7 @@ move_up = 0;
 move_down = 0;
 sprite_index_moving = spr_player;
 sprite_index_idle = spr_player_idle;
+
+// Track what is being carried
+currently_carrying = -1;
+currently_carrying_x_scale = 1;
