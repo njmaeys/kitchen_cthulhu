@@ -1,22 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fridge",
+  "name": "obj_item_interaction_menu",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "kitchen",
-    "path": "folders/Objects/kitchen.yy",
+    "name": "menus",
+    "path": "folders/Objects/menus.yy",
   },
-  "parentObjectId": {
-    "name": "obj_par_environment",
-    "path": "objects/obj_par_environment/obj_par_environment.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,11 +26,13 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"obj_creation_type","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"\"","varType":2,},
+  ],
   "solid": false,
   "spriteId": {
-    "name": "spr_fridge",
-    "path": "sprites/spr_fridge/spr_fridge.yy",
+    "name": "spr_menu_item_interaction",
+    "path": "sprites/spr_menu_item_interaction/spr_menu_item_interaction.yy",
   },
   "spriteMaskId": null,
   "visible": true,

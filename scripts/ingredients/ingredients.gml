@@ -14,5 +14,23 @@ function all_possible_ingredients() {
 			needs_chopped: false,
 			chop_time: 0,
 		},
+		cheese: {
+			spr: spr_cheese,
+			name: "cheese",
+			needs_chopped: true,
+			chop_time: 120,
+		},
+		cheese_chopped: {
+			spr: spr_cheese_chopped,
+			name: "cheese_chopped",
+			needs_chopped: false,
+			chop_time: 0,
+		},
+		burger: {
+			spr: spr_burger,
+			name: "burger",
+			needs_chopped: false,
+			chop_time: 0,
+		},
 	}
 }

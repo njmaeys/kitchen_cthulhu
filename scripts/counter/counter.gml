@@ -72,5 +72,10 @@ function counter_chop_item() {
 			currently_holding = obj_ingredient_manager.all_ingredients.tomato_chopped;
 			chop_timer = -1;
 			return;
+			
+		case "cheese":
+			currently_holding = obj_ingredient_manager.all_ingredients.cheese_chopped;
+			chop_timer = -1;
+			return;
 	}
 }

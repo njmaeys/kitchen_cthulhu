@@ -9,13 +9,18 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 </p>
 
 ---
+### Bugs
+| Item | Notes | Status |
+|----------|:-------------:|------:|
+| Chop animation won't show with multiple items | N/A | Not Started |
 
+---
 
 ### Implementation Progress
 | Item | Notes | Status |
 |----------|:-------------:|------:|
 | ~~Take items from fridge~~ | N/A | Done |
-| Take items from fridge Interface | N/A | In Progress |
+| ~~Take items from fridge Interface~~ | N/A | Done |
 | ~~Chop items~~ | N/A | Done |
 | Cook Burger | N/A | Not Started |
 | Plate Items | N/A | Not Started |
