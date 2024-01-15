@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d4ae72d8-49fe-45d4-abae-402f7b36671a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 6,
+  "origin": 9,
   "parent": {
     "name": "kitchen",
     "path": "folders/Sprites/kitchen.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
-    "yorigin": 32,
+    "yorigin": 31,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
