@@ -23,9 +23,15 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Take items from fridge Interface~~ | N/A | Done |
 | ~~Chop items~~ | N/A | Done |
 | ~~Progress Indicator for Chop & Cook~~ | Reusable component | Done |
-| Cook Burger | N/A | Not Started |
+| Cook Burger | N/A | Started |
 | Plate Items | N/A | Not Started |
 | Create Remaining Ingredients | N/A | Not Started |
+| Host Stand | N/A | Not Started |
+| Customer Queue | N/A | Not Started |
+| Seat Customer | N/A | Not Started |
+| Take Order | N/A | Not Started |
+| Serve Customer | N/A | Not Started |
+| Clean Table and Wash Dishes | N/A | Not Started |
 | ... | ... | ... |
 
 ---
