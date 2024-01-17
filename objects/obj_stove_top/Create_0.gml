@@ -12,5 +12,6 @@ mouse_hovering = false;
 look_distance = 32;
 player_nearby = false;
 
-
+// Place and pick up vars
+just_placed_item_cooldown = 0;
 

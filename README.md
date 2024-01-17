@@ -4,7 +4,7 @@
 
 Start your kitchen and get cooking. What will find it's way into your restaurant...?
 
-<p align = "left">
+<p align = "center">
     <img src="sprite_assets\kitchen\spr_fridge.png" width=100>
 </p>
 
@@ -23,9 +23,8 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Take items from fridge Interface~~ | N/A | Done |
 | ~~Chop items~~ | N/A | Done |
 | ~~Progress Indicator for Chop & Cook~~ | Reusable component | Done |
-| Cook Burger | N/A | Started |
+| Cook Burger (place items and take items is done) | N/A | Started |
 | Plate Items | N/A | Not Started |
-| Create Remaining Ingredients | N/A | Not Started |
 | Host Stand | N/A | Not Started |
 | Customer Queue | N/A | Not Started |
 | Seat Customer | N/A | Not Started |
