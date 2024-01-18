@@ -27,5 +27,5 @@ if chop_progress_percentage > 0
 	and currently_holding != -1
 	and chop_timer > 0
 {
-	draw_progress_meeter(chop_progress_percentage, 40);
+	draw_progress_meeter(chop_progress_percentage, x, y, 40);
 }
