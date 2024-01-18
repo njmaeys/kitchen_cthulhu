@@ -150,8 +150,11 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 function stove_cook_item(_index) {
 	if currently_holding_cooking_timers[_index] > 0 {
 		currently_holding_cooking_timers[_index] -= 1;
+		
+		var _cook_progress_percentage = interaction_progress(currently_holding[_index].cook_time, currently_holding_cooking_timers[_index]);
+		draw_progress_meeter(_cook_progress_percentage, 40);
 	}
-	//show_debug_message($"Slot: {_index} | Cooking time: {currently_holding[_index].cooking_time}");
+
 	
 	if currently_holding_cooking_timers[_index] <= 0 {
 		switch currently_holding[_index].name {

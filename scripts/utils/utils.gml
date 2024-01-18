@@ -13,7 +13,7 @@ function close_to_player() {
 	return false
 }
 
-function draw_progress_meeter(_val_to_check) {
+function draw_progress_meeter(_val_to_check, _y_offset) {
 	/*
 	Utilize this whenever sending in a need to display a progress meeter
 	*/
@@ -22,7 +22,7 @@ function draw_progress_meeter(_val_to_check) {
 	var _max_progress_width = 32;
 	var _max_progress_height = 8;
 	var _progress_x_offset = x;
-	var _progress_y_offset = y - 40;
+	var _progress_y_offset = y - _y_offset;
 	
 	
 	draw_sprite_stretched(
