@@ -33,7 +33,6 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | Clean Table and Wash Dishes | N/A | Not Started |
 | ... | ... | ... |
 
-
 ---
 
 ## Developed By
