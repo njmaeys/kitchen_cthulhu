@@ -12,6 +12,7 @@ function stove_top_set_current_level_attributres() {
 			obj_stove_top.currently_holding = []
 			for (var _i = 0; _i < obj_stove_top.current_cook_slots; _i += 1) {
 				obj_stove_top.currently_holding[_i] = -1;
+				obj_stove_top.currently_holding_cooking_timers[_i] = 0;
 			}
 			return;
 	}
@@ -44,6 +45,8 @@ function stove_place_item(_slot_x_offset, _slot_y_offset) {
 				and obj_player.currently_carrying.needs_cooked
 			{
 				currently_holding[_i] = obj_player.currently_carrying;
+				currently_holding_cooking_timers[_i] = currently_holding[_i].cook_time;
+				show_debug_message($"Clicked on: {_i}");
 		
 				obj_player.currently_carrying = -1;
 				just_placed_item_cooldown = 5;
@@ -74,6 +77,8 @@ function stove_place_item(_slot_x_offset, _slot_y_offset) {
 				_w,
 				_w
 			);
+			
+			stove_cook_item(_i);
 		}
 		
 		_slot_y_offset += 20;
@@ -119,9 +124,8 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 				and just_placed_item_cooldown == 0 // Account for the damn quick click thing with the mouse
 			{
 				obj_player.currently_carrying = currently_holding[_i];
-			
-				// TODO: Remove the cook timer thingy
 				currently_holding[_i] = -1;
+				break;
 			}
 		}
 	
@@ -139,5 +143,23 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 		}
 	
 		_slot_y_offset_pickup += 20;
+	}
+}
+
+
+function stove_cook_item(_index) {
+	if currently_holding_cooking_timers[_index] > 0 {
+		currently_holding_cooking_timers[_index] -= 1;
+		
+		var _cook_progress_percentage = interaction_progress(currently_holding[_index].cook_time, currently_holding_cooking_timers[_index]);
+		draw_progress_meeter(_cook_progress_percentage, 40);
+	}
+
+	
+	if currently_holding_cooking_timers[_index] <= 0 {
+		switch currently_holding[_index].name {
+			case "burger":
+				currently_holding[_index] = obj_ingredient_manager.all_ingredients.burger_cooked;
+		}
 	}
 }

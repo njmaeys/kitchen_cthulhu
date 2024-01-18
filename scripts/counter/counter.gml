@@ -53,6 +53,12 @@ function counter_chop_item() {
 			currently_chopping = true;
 			chop_timer -= 1;
 			
+			/*
+			NOTE TO SELF
+			Try and set up an array of the chop timers based on the index of the item 
+			in the stove array. This may make it easier
+			*/
+			
 			chop_progress_percentage = interaction_progress(currently_holding.chop_time, chop_timer);
 		}
 		else {

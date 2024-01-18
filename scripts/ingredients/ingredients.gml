@@ -9,6 +9,7 @@ function all_possible_ingredients() {
 			chop_time: 120,
 			needs_cooked: false,
 			cook_time: 0,
+			burn_time: 0,
 		},
 		tomato_chopped: {
 			spr: spr_tomato_chopped,
@@ -17,6 +18,7 @@ function all_possible_ingredients() {
 			chop_time: 0,
 			needs_cooked: false,
 			cook_time: 0,
+			burn_time: 0,
 		},
 		cheese: {
 			spr: spr_cheese,
@@ -25,6 +27,7 @@ function all_possible_ingredients() {
 			chop_time: 120,
 			needs_cooked: false,
 			cook_time: 0,
+			burn_time: 0,
 		},
 		cheese_chopped: {
 			spr: spr_cheese_chopped,
@@ -33,6 +36,7 @@ function all_possible_ingredients() {
 			chop_time: 0,
 			needs_cooked: false,
 			cook_time: 0,
+			burn_time: 0,
 		},
 		burger: {
 			spr: spr_burger,
@@ -40,7 +44,8 @@ function all_possible_ingredients() {
 			needs_chopped: false,
 			chop_time: 0,
 			needs_cooked: true,
-			cook_time: 120,
+			cook_time: 240,
+			burn_time: 0,
 		},
 		burger_cooked: {
 			spr: spr_burger_cooked,
@@ -49,6 +54,7 @@ function all_possible_ingredients() {
 			chop_time: 0,
 			needs_cooked: false,
 			cook_time: 0,
+			burn_time: 240,
 		},
 	}
 }
