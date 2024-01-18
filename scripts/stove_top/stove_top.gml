@@ -10,9 +10,11 @@ function stove_top_set_current_level_attributres() {
 			
 			// Initialize the stove top as an empty array and so we know the items to expect
 			obj_stove_top.currently_holding = []
+			
 			for (var _i = 0; _i < obj_stove_top.current_cook_slots; _i += 1) {
 				obj_stove_top.currently_holding[_i] = -1;
 				obj_stove_top.currently_holding_cooking_timers[_i] = 0;
+				obj_stove_top.currently_holding_burning_timers[_i] = 0;
 			}
 			return;
 	}
@@ -56,6 +58,7 @@ function stove_place_item(_slot_x_offset, _slot_y_offset) {
 			{
 				currently_holding[_i] = obj_player.currently_carrying;
 				currently_holding_cooking_timers[_i] = currently_holding[_i].cook_time;
+				currently_holding_burning_timers[_i] = 0;
 		
 				obj_player.currently_carrying = -1;
 				just_placed_item_cooldown = 5;
@@ -87,11 +90,20 @@ function stove_place_item(_slot_x_offset, _slot_y_offset) {
 				_w
 			);
 			
-			stove_cook_item(_i);
-			
-			if currently_holding_cooking_timers[_i] > 0 {
-				var _cook_progress_percentage = interaction_progress(currently_holding[_i].cook_time, currently_holding_cooking_timers[_i]);
-				draw_progress_meeter(_cook_progress_percentage, _slot_x_offset-8, _slot_y_offset, 2);
+			if currently_holding[_i].cook_time > 0 {
+				stove_cook_item(_i);
+				if currently_holding_cooking_timers[_i] > 0 {
+					var _cook_progress_percentage = interaction_progress(currently_holding[_i].cook_time, currently_holding_cooking_timers[_i]);
+					draw_progress_meeter(_cook_progress_percentage, _slot_x_offset-8, _slot_y_offset, 2, spr_progress_meter);
+				}
+			}
+
+			if currently_holding[_i].burn_time > 0 {
+				stove_burn_item(_i);
+				if currently_holding_burning_timers[_i] > 0 {
+					var _burn_progress_percentage = interaction_progress(currently_holding[_i].burn_time, currently_holding_burning_timers[_i]);
+					draw_progress_meeter(_burn_progress_percentage, _slot_x_offset-8, _slot_y_offset, 2, spr_progress_meter_danger);
+				}
 			}
 		}
 		
@@ -165,6 +177,7 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 function stove_cook_item(_index) {
 	if currently_holding_cooking_timers[_index] > 0 {
 		currently_holding_cooking_timers[_index] -= 1;
+		return;
 	}
 
 	
@@ -172,6 +185,26 @@ function stove_cook_item(_index) {
 		switch currently_holding[_index].name {
 			case "burger":
 				currently_holding[_index] = obj_ingredient_manager.all_ingredients.burger_cooked;
+		}
+	}
+	
+	// Set the burning timer
+	if currently_holding_burning_timers[_index] <= 0 {
+		currently_holding_burning_timers[_index] = currently_holding[_index].burn_time;
+	}
+}
+
+function stove_burn_item(_index) {
+	if currently_holding_burning_timers[_index] > 0 {
+		currently_holding_burning_timers[_index] -= 1;
+		return;
+	}
+
+	
+	if currently_holding_burning_timers[_index] <= 0 {
+		switch currently_holding[_index].name {
+			case "burger_cooked":
+				currently_holding[_index] = obj_ingredient_manager.all_ingredients.burger_burnt;
 		}
 	}
 }

@@ -49,12 +49,21 @@ function all_possible_ingredients() {
 		},
 		burger_cooked: {
 			spr: spr_burger_cooked,
-			name: "burger",
+			name: "burger_cooked",
 			needs_chopped: false,
 			chop_time: 0,
 			needs_cooked: false,
 			cook_time: 0,
 			burn_time: 240,
+		},
+		burger_burnt: {
+			spr: spr_burger_burnt,
+			name: "burger_burnt",
+			needs_chopped: false,
+			chop_time: 0,
+			needs_cooked: false,
+			cook_time: 0,
+			burn_time: 0,
 		},
 	}
 }

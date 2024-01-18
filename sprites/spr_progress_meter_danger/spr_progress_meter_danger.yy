@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_cheese_chopped",
-  "bbox_bottom": 15,
+  "name": "spr_progress_meter_danger",
+  "bbox_bottom": 3,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 0,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0bd04237-9337-40b8-9c2d-76f9b94dbd85",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c0088450-80f4-45c5-9c58-abb6ebf91f86",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 4,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"abd7ebef-662b-4956-b2e0-530ce665c611","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"86112c91-45c9-4a98-9738-06c452205e9b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "ingredients",
-    "path": "folders/Sprites/kitchen/ingredients.yy",
+    "name": "menus",
+    "path": "folders/Sprites/menus.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_cheese_chopped",
+    "name": "spr_progress_meter_danger",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0bd04237-9337-40b8-9c2d-76f9b94dbd85","path":"sprites/spr_cheese_chopped/spr_cheese_chopped.yy",},},},"Disabled":false,"id":"3f2ff00b-77d2-420f-8707-5fe7d586e0f0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c0088450-80f4-45c5-9c58-abb6ebf91f86","path":"sprites/spr_progress_meter_danger/spr_progress_meter_danger.yy",},},},"Disabled":false,"id":"5ff593cc-d739-4448-b35f-5631eb5abc37","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 1,
 }
