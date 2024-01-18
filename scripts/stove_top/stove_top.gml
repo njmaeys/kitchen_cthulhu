@@ -19,8 +19,17 @@ function stove_top_set_current_level_attributres() {
 }
 
 function stove_place_item(_slot_x_offset, _slot_y_offset) {
+	var _progress_offset = 40;
+	
 	for (var _i = 0; _i < array_length(currently_holding); _i += 1) {
 		var _slot = currently_holding[_i]
+		
+		if just_placed_item_cooldown > 0 {
+			// The stupid cooldown thing for clicking over something already being clicked
+			just_placed_item_cooldown -= 1;
+			_slot_y_offset += 20;
+			continue;
+		}
 		
 		var _w = 18;
 		var _h = 18;
@@ -43,10 +52,10 @@ function stove_place_item(_slot_x_offset, _slot_y_offset) {
 				and _slot == -1
 				and obj_player.currently_carrying != -1
 				and obj_player.currently_carrying.needs_cooked
+				and just_placed_item_cooldown == 0
 			{
 				currently_holding[_i] = obj_player.currently_carrying;
 				currently_holding_cooking_timers[_i] = currently_holding[_i].cook_time;
-				show_debug_message($"Clicked on: {_i}");
 		
 				obj_player.currently_carrying = -1;
 				just_placed_item_cooldown = 5;
@@ -79,6 +88,11 @@ function stove_place_item(_slot_x_offset, _slot_y_offset) {
 			);
 			
 			stove_cook_item(_i);
+			
+			if currently_holding_cooking_timers[_i] > 0 {
+				var _cook_progress_percentage = interaction_progress(currently_holding[_i].cook_time, currently_holding_cooking_timers[_i]);
+				draw_progress_meeter(_cook_progress_percentage, _slot_x_offset-8, _slot_y_offset, 2);
+			}
 		}
 		
 		_slot_y_offset += 20;
@@ -125,6 +139,7 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 			{
 				obj_player.currently_carrying = currently_holding[_i];
 				currently_holding[_i] = -1;
+				just_placed_item_cooldown = 5;
 				break;
 			}
 		}
@@ -150,9 +165,6 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 function stove_cook_item(_index) {
 	if currently_holding_cooking_timers[_index] > 0 {
 		currently_holding_cooking_timers[_index] -= 1;
-		
-		var _cook_progress_percentage = interaction_progress(currently_holding[_index].cook_time, currently_holding_cooking_timers[_index]);
-		draw_progress_meeter(_cook_progress_percentage, 40);
 	}
 
 	

@@ -17,7 +17,7 @@
     "name": "obj_par_environment",
     "path": "objects/obj_par_environment/obj_par_environment.yy",
   },
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
