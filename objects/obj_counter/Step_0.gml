@@ -15,6 +15,11 @@ else {
 		counter_take_item();
 	}
 	counter_chop_item();
+	
+	if plate_inst != -1 {
+		plate_inst.x = self.x + 6;
+		plate_inst.y = self.y - 32;
+	}
 }
 
 

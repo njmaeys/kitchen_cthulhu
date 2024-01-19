@@ -7,11 +7,19 @@ function counter_place_item() {
 		and mouse_check_button_pressed(mb_left)
 	{
 		currently_holding = obj_player.currently_carrying;
-		if obj_player.currently_carrying.needs_chopped {
+		if currently_holding.needs_chopped {
 			chop_timer = obj_player.currently_carrying.chop_time;
 		}
 		
 		obj_player.currently_carrying = -1;
+		
+		if currently_holding.name == "plate" {
+			plate_inst = obj_player.plate_inst;
+			obj_player.plate_inst = -1;
+			
+			plate_inst.is_being_carried = false;
+			plate_inst.is_on_counter = true;
+		}
 	}
 	
 	return;

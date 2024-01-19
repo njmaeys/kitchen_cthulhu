@@ -14,4 +14,5 @@ sprite_index_idle = spr_player_idle;
 
 // Track what is being carried
 currently_carrying = -1;
+plate_inst = -1; // If carrying a plate keep track of the specific inst
 currently_carrying_x_scale = 1;

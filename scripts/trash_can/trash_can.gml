@@ -4,6 +4,11 @@ function remove_item_from_player_carry(){
 		and mouse_hovering
 		and mouse_check_button_pressed(mb_left)
 	{
-		obj_player.currently_carrying = -1;
+		if obj_player.currently_carrying.name == "plate" {
+			// TODO: Do other plate things
+		}
+		else {
+			obj_player.currently_carrying = -1;
+		}
 	}
 }
