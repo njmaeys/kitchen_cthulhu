@@ -9,6 +9,9 @@ currently_plated = copy_struct(obj_ingredient_manager.plateable_items);
 is_being_carried = false;
 is_on_counter = false;
 is_clean = true;
+wash_time_max = 120;
+wash_time = 120; // 2 seconds
+currently_washing = false;
 
 // Use this to help set and usent a dirty plate sprite
 has_items = false;
