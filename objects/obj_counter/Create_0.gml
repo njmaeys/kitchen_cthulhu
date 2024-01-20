@@ -16,6 +16,7 @@ player_nearby = false;
 
 // Check if there is currently something on it
 currently_holding = -1;
+plate_inst = -1; // If it is holding a plate we need to know the inst of that one
 
 
 // Chop timer - Track how long it has left to be chopped.

@@ -2,6 +2,17 @@ function all_possible_ingredients() {
 	// For anything that has a chopped item I'm going to try and set
 	// a separate item for it and see how I like that methodology
 	return {
+		// Plate is not a cookable item but gives the ability to 
+		// check for the usage of a plate to block other stuff
+		plate: {
+			spr: spr_dummy_placeholder,
+			name: "plate",
+			needs_chopped: false,
+			chop_time: 0,
+			needs_cooked: false,
+			cook_time: 0,
+			burn_time: 0,
+		},
 		tomato: {
 			spr: spr_tomato,
 			name: "tomato",

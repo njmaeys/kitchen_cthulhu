@@ -11,6 +11,9 @@ if currently_carrying != -1 {
 	if is_moving {
 		if x + vx < x {
 			currently_carrying_x_scale = -1;
+			if plate_inst != -1 {
+				plate_inst.x -= 16;
+			}
 		}
 		else {
 			currently_carrying_x_scale = 1;
