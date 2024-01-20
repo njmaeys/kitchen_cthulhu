@@ -26,7 +26,8 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Cook & Burn Burgers~~ | N/A | Done |
 | ~~Plate Items~~ | N/A | Done |
 | ~~Trash Plated Item~~ | N/A | Done |
-| Wash Dishes | N/A | Started |
+| ~~Wash Dishes~~ | N/A | Done |
+| Lettuce and Buns | N/A | Started |
 | Host Stand | N/A | Not Started |
 | Customer Queue | N/A | Not Started |
 | Seat Customer | N/A | Not Started |
