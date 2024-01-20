@@ -25,6 +25,7 @@ function counter_place_item() {
 	
 	// Plate items if there is a plate and the player has something to plate
 	if plate_inst != -1 
+		and plate_inst.is_clean
 		and obj_player.currently_carrying != -1
 		and player_nearby
 		and mouse_hovering

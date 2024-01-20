@@ -10,9 +10,6 @@ if is_being_carried {
 }
 
 // Set's the dirty dish sprite
-show_debug_message("\n## HERE ###");
-show_debug_message(is_clean);
-show_debug_message(has_items);
 if not is_clean 
 	and not has_items
 {

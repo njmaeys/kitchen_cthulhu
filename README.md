@@ -24,9 +24,9 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Chop items~~ | N/A | Done |
 | ~~Progress Indicator for Chop & Cook~~ | Reusable component | Done |
 | ~~Cook & Burn Burgers~~ | N/A | Done |
-| Plate Items | N/A | Started |
-| Trash Plated Item | N/A | Not Started |
-| Wash Dishes | N/A | Not Started |
+| ~~Plate Items~~ | N/A | Done |
+| ~~Trash Plated Item~~ | N/A | Done |
+| Wash Dishes | N/A | Started |
 | Host Stand | N/A | Not Started |
 | Customer Queue | N/A | Not Started |
 | Seat Customer | N/A | Not Started |
