@@ -53,7 +53,8 @@
     {"name":"spr_burger_burnt","order":6,"path":"sprites/spr_burger_burnt/spr_burger_burnt.yy",},
     {"name":"spr_burger","order":4,"path":"sprites/spr_burger/spr_burger.yy",},
     {"name":"_notes","order":3,"path":"scripts/_notes/_notes.yy",},
-    {"name":"spr_plate_stacks_lvl_one","order":8,"path":"sprites/spr_plate_stacks_lvl_one/spr_plate_stacks_lvl_one.yy",},
+    {"name":"plate_stack","order":5,"path":"scripts/plate_stack/plate_stack.yy",},
     {"name":"trash_can","order":2,"path":"scripts/trash_can/trash_can.yy",},
+    {"name":"spr_plate_stacks_lvl_one","order":8,"path":"sprites/spr_plate_stacks_lvl_one/spr_plate_stacks_lvl_one.yy",},
   ],
 }

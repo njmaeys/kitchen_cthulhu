@@ -23,6 +23,14 @@ else {
 }
 
 
+// TEMP
+if plate_inst != -1 {
+	show_debug_message("\n#### HERE ####");
+	show_debug_message($"Player depth: {obj_player.depth}");
+	show_debug_message($"Counter depth: {self.depth}");
+	show_debug_message($"Plate depth: {plate_inst.depth}");
+}
+
 
 
 // Depth sort

@@ -9,6 +9,7 @@ currently_holding = [];
 // What is happening to the plate
 is_being_carried = false;
 is_on_counter = false;
+is_clean = true;
 
 
 

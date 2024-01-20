@@ -11,15 +11,16 @@ function counter_place_item() {
 			chop_timer = obj_player.currently_carrying.chop_time;
 		}
 		
-		obj_player.currently_carrying = -1;
-		
 		if currently_holding.name == "plate" {
 			plate_inst = obj_player.plate_inst;
 			obj_player.plate_inst = -1;
 			
 			plate_inst.is_being_carried = false;
 			plate_inst.is_on_counter = true;
+			plate_inst.depth = self.depth - 1;
 		}
+		
+		obj_player.currently_carrying = -1;
 	}
 	
 	return;
@@ -35,6 +36,15 @@ function counter_take_item() {
 		and mouse_check_button_pressed(mb_left)
 	{
 		obj_player.currently_carrying = currently_holding;
+		
+		if currently_holding.name == "plate" {
+			obj_player.plate_inst = plate_inst;
+			obj_player.plate_inst.depth = obj_game_manager.depth_deliverables;
+			plate_inst = -1;
+			
+			obj_player.plate_inst.is_being_carried = true;
+			obj_player.plate_inst.is_on_counter = false;
+		}
 		
 		currently_holding = -1;
 		chop_timer = -1;

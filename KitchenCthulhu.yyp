@@ -86,10 +86,11 @@
     {"id":{"name":"spr_burger_burnt","path":"sprites/spr_burger_burnt/spr_burger_burnt.yy",},},
     {"id":{"name":"spr_burger","path":"sprites/spr_burger/spr_burger.yy",},},
     {"id":{"name":"_notes","path":"scripts/_notes/_notes.yy",},},
-    {"id":{"name":"spr_plate_stacks_lvl_one","path":"sprites/spr_plate_stacks_lvl_one/spr_plate_stacks_lvl_one.yy",},},
     {"id":{"name":"ts_main","path":"tilesets/ts_main/ts_main.yy",},},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
+    {"id":{"name":"plate_stack","path":"scripts/plate_stack/plate_stack.yy",},},
     {"id":{"name":"trash_can","path":"scripts/trash_can/trash_can.yy",},},
+    {"id":{"name":"spr_plate_stacks_lvl_one","path":"sprites/spr_plate_stacks_lvl_one/spr_plate_stacks_lvl_one.yy",},},
     {"id":{"name":"rm_kitchen","path":"rooms/rm_kitchen/rm_kitchen.yy",},},
   ],
   "RoomOrderNodes": [
