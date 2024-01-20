@@ -10,6 +10,7 @@ mouse_hovering = false;
 
 
 // Player
+can_use = true;
 look_distance = 32;
 player_nearby = false;
 

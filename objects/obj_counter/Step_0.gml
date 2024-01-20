@@ -1,5 +1,9 @@
 /// @description
 
+// Can use check
+if not can_use {
+	return;
+}
 
 // Mouse checks
 mouse_hovering = mouse_hovering_location(_x1, _y1, _x2, _y2);
