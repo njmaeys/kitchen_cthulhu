@@ -9,3 +9,16 @@ if is_being_carried {
 	depth = obj_game_manager.depth_deliverables;
 }
 
+// Set's the dirty dish sprite
+show_debug_message("\n## HERE ###");
+show_debug_message(is_clean);
+show_debug_message(has_items);
+if not is_clean 
+	and not has_items
+{
+	// Only show the dirty plate if it is dirty and does NOT have items
+	image_index = 1; 
+}
+else {
+	image_index = 0;
+}

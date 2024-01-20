@@ -46,3 +46,16 @@ function draw_progress_meeter(_val_to_check, _x, _y, _y_offset, _spr_meter) {
 		2
 	);
 }
+
+function copy_struct(_struct){
+    var _key, _value;
+    var _new_copy = {};
+    var _keys = variable_struct_get_names(_struct);
+    for (var _i = array_length(_keys)-1; _i >= 0; --_i) {
+            _key = _keys[_i];
+            _value = _struct[$ _key];
+            variable_struct_get(_struct, _key);
+            variable_struct_set(_new_copy, _key, _value)
+    }
+    return _new_copy;
+}

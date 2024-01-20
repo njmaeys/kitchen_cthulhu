@@ -23,6 +23,46 @@ function counter_place_item() {
 		obj_player.currently_carrying = -1;
 	}
 	
+	// Plate items if there is a plate and the player has something to plate
+	if plate_inst != -1 
+		and obj_player.currently_carrying != -1
+		and player_nearby
+		and mouse_hovering
+		and mouse_check_button_pressed(mb_left)
+	{
+		switch obj_player.currently_carrying.name {
+			case "burger_cooked":
+				if plate_inst.currently_plated.burger_cooked != -1 {
+					return;
+				}
+			
+				plate_inst.currently_plated.burger_cooked = obj_ingredient_manager.all_ingredients.burger_cooked;
+				plate_inst.is_clean = false;
+				obj_player.currently_carrying = -1;
+				return;
+				
+			case "tomato_chopped":
+				if plate_inst.currently_plated.tomato_chopped != -1 {
+					return;
+				}
+				
+				plate_inst.currently_plated.tomato_chopped = obj_ingredient_manager.all_ingredients.tomato_chopped;
+				plate_inst.is_clean = false;
+				obj_player.currently_carrying = -1;
+				return;
+				
+			case "cheese_chopped":
+				if plate_inst.currently_plated.cheese_chopped != -1 {
+					return;
+				}
+				
+				plate_inst.currently_plated.cheese_chopped = obj_ingredient_manager.all_ingredients.cheese_chopped;
+				plate_inst.is_clean = false;
+				obj_player.currently_carrying = -1;
+				return;
+		}
+	}
+	
 	return;
 }
 
