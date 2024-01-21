@@ -76,6 +76,15 @@ function all_possible_ingredients() {
 			cook_time: 0,
 			burn_time: 0,
 		},
+		burger_bun: {
+			spr: spr_burger_bun,
+			name: "burger_bun",
+			needs_chopped: false,
+			chop_time: 0,
+			needs_cooked: false,
+			cook_time: 0,
+			burn_time: 0,
+		},
 	}
 }
 
