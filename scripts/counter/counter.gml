@@ -32,6 +32,18 @@ function counter_place_item() {
 		and mouse_check_button_pressed(mb_left)
 	{
 		switch obj_player.currently_carrying.name {
+			case "burger_bun":
+				// This one is a bit different than the rest. It sets two items at once burger_bun_bottom and burger_bun_top
+				if plate_inst.currently_plated.burger_bun_top != -1 {
+					return;
+				}
+			
+				plate_inst.currently_plated.burger_bun_bottom = obj_ingredient_manager.all_ingredients.burger_bun_bottom;
+				plate_inst.currently_plated.burger_bun_top = obj_ingredient_manager.all_ingredients.burger_bun_top;
+				plate_inst.is_clean = false;
+				obj_player.currently_carrying = -1;
+				return;
+				
 			case "burger_cooked":
 				if plate_inst.currently_plated.burger_cooked != -1 {
 					return;
@@ -58,6 +70,16 @@ function counter_place_item() {
 				}
 				
 				plate_inst.currently_plated.cheese_chopped = obj_ingredient_manager.all_ingredients.cheese_chopped;
+				plate_inst.is_clean = false;
+				obj_player.currently_carrying = -1;
+				return;
+				
+			case "lettuce_chopped":
+				if plate_inst.currently_plated.lettuce_chopped != -1 {
+					return;
+				}
+				
+				plate_inst.currently_plated.lettuce_chopped = obj_ingredient_manager.all_ingredients.lettuce_chopped;
 				plate_inst.is_clean = false;
 				obj_player.currently_carrying = -1;
 				return;
@@ -131,6 +153,11 @@ function counter_chop_item() {
 			
 		case "cheese":
 			currently_holding = obj_ingredient_manager.all_ingredients.cheese_chopped;
+			chop_timer = -1;
+			return;
+			
+		case "lettuce":
+			currently_holding = obj_ingredient_manager.all_ingredients.lettuce_chopped;
 			chop_timer = -1;
 			return;
 	}
