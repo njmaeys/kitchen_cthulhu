@@ -1,4 +1,4 @@
-function fridge_take_item() {
+function bun_and_lettuce_take_item() {
 	if obj_player.currently_carrying == -1 {
 		// Allow the player to pick something up if they have nothing
 		if mouse_hovering == 1
@@ -14,12 +14,12 @@ function fridge_take_item() {
 	return;
 }
 
-function fridge_draw_selections() {
+function bun_and_lettuce_draw_selections() {
 	var _x_offset = x + 6;
 	var _y_offset = y + 4;
 	
-	for (var _i = 0; _i < array_length(obj_fridge.current_ingredients); _i += 1) {
-		var _item = obj_fridge.current_ingredients[_i]
+	for (var _i = 0; _i < array_length(obj_bun_and_lettuce_container.current_ingredients); _i += 1) {
+		var _item = obj_bun_and_lettuce_container.current_ingredients[_i]
 	
 		/*
 		NOTE: The size of the container sprite is 24x24. This means
@@ -41,10 +41,10 @@ function fridge_draw_selections() {
 			_hover_index = 1;
 			
 			if mouse_check_button_pressed(mb_left) 
-				and obj_fridge.can_click_ingredient_cooldown == 0
+				and obj_bun_and_lettuce_container.can_click_ingredient_cooldown == 0
 			{
 				// If player clicks check if the item can be given to them or not
-				fridge_give_item_to_player(_item.name);
+				bun_and_lettuce_give_item_to_player(_item.name);
 			}
 		}
 		
@@ -69,7 +69,8 @@ function fridge_draw_selections() {
 	}
 }
 
-function fridge_give_item_to_player(_item_name) {
+
+function bun_and_lettuce_give_item_to_player(_item_name) {
 	// Immediately exit if the player is already holding something.
 	// Let them figure out they are holding something already
 	if obj_player.currently_carrying != -1 {
@@ -77,19 +78,15 @@ function fridge_give_item_to_player(_item_name) {
 	}
 	
 	switch _item_name {
-		case "cheese":
-			obj_player.currently_carrying = obj_ingredient_manager.all_ingredients.cheese;
+		case "burger_bun":
+			obj_player.currently_carrying = obj_ingredient_manager.all_ingredients.burger_bun;
 			break;
 			
-		case "tomato":
-			obj_player.currently_carrying = obj_ingredient_manager.all_ingredients.tomato;
-			break;
-			
-		case "burger":
-			obj_player.currently_carrying = obj_ingredient_manager.all_ingredients.burger;
+		case "lettuce":
+			obj_player.currently_carrying = obj_ingredient_manager.all_ingredients.lettuce;
 			break;
 	}
 	
 	instance_destroy(obj_item_interaction_menu);
-	obj_fridge.draw_ingredients_selection = false;
+	obj_bun_and_lettuce_container.draw_ingredients_selection = false;
 }

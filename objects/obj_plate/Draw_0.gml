@@ -7,11 +7,13 @@ draw_self();
 
 // Draw all of the plated items
 // I don't love this but I have to set the order manually how I want things plated
-//var _plated_items = variable_struct_get_names(currently_plated);
 var _plated_items = [
+	"burger_bun_bottom",
 	"burger_cooked",
 	"cheese_chopped",
+	"lettuce_chopped",
 	"tomato_chopped",
+	"burger_bun_top",
 ];
 var _plated_items_x_offset = x + 3;
 var _plated_items_y_offset = y + 1;

@@ -9,6 +9,10 @@ switch obj_creation_type {
 		image_xscale = 3;
 		fridge_draw_selections();
 		break;
+	case "bun_and_lettuce_container":
+		image_xscale = 2;
+		bun_and_lettuce_draw_selections();
+		break;
 }
 
 

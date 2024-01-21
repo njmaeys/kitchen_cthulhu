@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_bun_and_lettuce_container",
   "bbox_bottom": 30,
-  "bbox_left": 0,
-  "bbox_right": 62,
+  "bbox_left": 1,
+  "bbox_right": 63,
   "bbox_top": 6,
   "bboxMode": 2,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"80a48c3f-b6d9-49e2-818b-d774dd31c349",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b43d6159-98d4-4a29-842d-0724101dd147",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e6df8337-be78-4562-8da0-f37bd1ab3889","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"978816d3-e5e0-46c5-8812-276e26bf707d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 6,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"80a48c3f-b6d9-49e2-818b-d774dd31c349","path":"sprites/spr_bun_and_lettuce_container/spr_bun_and_lettuce_container.yy",},},},"Disabled":false,"id":"0cd952db-99e7-45e2-b860-63a3717f7fae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b43d6159-98d4-4a29-842d-0724101dd147","path":"sprites/spr_bun_and_lettuce_container/spr_bun_and_lettuce_container.yy",},},},"Disabled":false,"id":"89b42d77-178e-49d0-9c19-6348763e907c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
