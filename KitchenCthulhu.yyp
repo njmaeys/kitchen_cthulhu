@@ -92,6 +92,7 @@
     {"id":{"name":"obj_item_interaction_menu","path":"objects/obj_item_interaction_menu/obj_item_interaction_menu.yy",},},
     {"id":{"name":"spr_plate_stacks_lvl_one","path":"sprites/spr_plate_stacks_lvl_one/spr_plate_stacks_lvl_one.yy",},},
     {"id":{"name":"spr_fridge","path":"sprites/spr_fridge/spr_fridge.yy",},},
+    {"id":{"name":"spr_close","path":"sprites/spr_close/spr_close.yy",},},
     {"id":{"name":"spr_cheese_chopped","path":"sprites/spr_cheese_chopped/spr_cheese_chopped.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_burger_burnt","path":"sprites/spr_burger_burnt/spr_burger_burnt.yy",},},
