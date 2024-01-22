@@ -5,9 +5,15 @@ function movement_player() {
 	move_up = keyboard_check(ord("W")) * -1; // -1 otherwise inverted
 	move_down = keyboard_check(ord("S")) * -1; // -1 otherwise inverted
 
-	// Calc movement
-	vx = ((move_right - move_left) * move_speed);
-	vy = ((move_up - move_down) * move_speed);
+	// Calc movement but prevent if game is paused
+	if obj_game_manager.game_paused {
+		vx = 0;
+		vy = 0;
+	}
+	else {
+		vx = ((move_right - move_left) * move_speed);
+		vy = ((move_up - move_down) * move_speed);
+	}
 
 	// If moving
 	if (vx != 0 || vy != 0) {
