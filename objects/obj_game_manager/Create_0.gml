@@ -28,6 +28,7 @@ depth_menus = -60000; // Make sure this is always the top most depth drawn
 fullscreen = false;
 
 // Pause menu
+// TODO: If the game is paused any automatic timers need to be paused as well and other moving things need to stop
 game_paused = false;
 pause_x_offset = 150;
 pause_y_offset = 100;
