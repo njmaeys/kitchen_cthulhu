@@ -13,7 +13,7 @@ function draw_pause_menu() {
 	);
 	
 	// Interaction diagram
-	var _interactions_offset_x = _menu_x + (pause_width * 0.66);
+	var _interactions_offset_x = _menu_x + 16;
 	var _interactions_offset_y = _menu_y;
 	draw_sprite(
 		spr_menu_interactions,
@@ -22,8 +22,12 @@ function draw_pause_menu() {
 		_interactions_offset_y
 	);
 	
-	// Menu buttons (Exit, Main Menu, Save)
+	// Menu buttons 
 	var _menu_button_sprites = [
+		{
+			name: "full_screen",
+			spr: spr_full_screen,
+		},
 		{
 			name: "exit_game",
 			spr: spr_exit_game,
@@ -32,17 +36,23 @@ function draw_pause_menu() {
 			name: "main_menu",
 			spr: spr_main_menu,
 		}, 
-	] // Temp til I add the others. 
-	// TODO: Make these structs inside the array so I can have a case statement to take action when button click operation happens
-	var _menu_buttons_offset_x = _menu_x + (pause_width * 0.5) - 24;
+	] 
+	
+	var _menu_buttons_offset_x = _menu_x + (pause_width * 0.66) - 32;
 	var _menu_buttons_offset_y = _menu_y + 32;
-	var _menu_button_width = 48;
+	var _menu_button_width = 112;
 	var _menu_button_height = 24;
 	
 	for (var _i = 0; _i < array_length(_menu_button_sprites); _i += 1) {
 		var _item = _menu_button_sprites[_i];
 		
 		var _spr_index = 0;
+		if _item.name == "full_screen" {
+			if obj_game_manager.fullscreen {
+				_spr_index = 2;
+			}
+		}
+
 		var _mouse_on_button = point_in_rectangle(
 			mouse_x,
 			mouse_y,
@@ -53,7 +63,7 @@ function draw_pause_menu() {
 		);
 		
 		if _mouse_on_button {
-			_spr_index = 1;
+			_spr_index += 1;
 			
 			if mouse_check_button_pressed(mb_left) {
 				show_debug_message(_item.name);
@@ -105,6 +115,11 @@ function draw_pause_menu() {
 
 function pause_menu_button_interactions(_button_name) {
 	switch _button_name {
+		case "full_screen":
+			obj_game_manager.fullscreen = !obj_game_manager.fullscreen;
+			window_set_fullscreen(obj_game_manager.fullscreen);
+			return;
+			
 		case "exit_game":
 			game_end();
 			return;
