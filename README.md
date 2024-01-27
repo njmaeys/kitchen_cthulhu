@@ -29,8 +29,7 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Wash Dishes~~ | N/A | Done |
 | ~~Lettuce and Buns~~ | N/A | Done |
 | ~~Menu/Options~~ | N/A | Done (For Now) |
-| Host Stand | N/A | Started |
-| Customer Queue | N/A | Started |
+| Customer Order | N/A | Started |
 | "Serve" Customer | N/A | Not Started |
 | Clean Mess | N/A | Not Started |
 | ... | ... | ... |

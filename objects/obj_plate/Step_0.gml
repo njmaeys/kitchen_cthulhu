@@ -7,6 +7,11 @@ if is_being_carried {
 	y = obj_player.y - 16;
 	
 	depth = obj_game_manager.depth_deliverables;
+	
+	// TODO: Here is where I can throw the burger off the plate and set it to dirty
+	if keyboard_check_pressed(ord("F")) {
+		throw_burger();
+	}
 }
 
 // Set's the dirty dish sprite

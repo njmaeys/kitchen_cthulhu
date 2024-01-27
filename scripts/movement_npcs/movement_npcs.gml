@@ -9,7 +9,6 @@ function movement_npcs() {
 	else {
 		vx = ((move_right - move_left) * move_speed);
 		vy = ((move_up - move_down) * move_speed);
-		show_debug_message($"{vx}, {vy}")
 	}
 
 	// If moving
@@ -56,13 +55,11 @@ function npc_reset_move_dir() {
 	
 	reset_move_dir = false;
 
-	//move_left = keyboard_check(ord("A"));
-	//move_right = keyboard_check(ord("D"));
-	//move_up = keyboard_check(ord("W")) * -1; // -1 otherwise inverted
-	//move_down = keyboard_check(ord("S")) * -1; // -1 otherwise inverted
 	move_left = irandom_range(-1, 0);
 	move_right = irandom_range(-1, 0);
 	move_up = irandom_range(0, 1);
 	move_down = irandom_range(0, 1);
 	
 }
+
+

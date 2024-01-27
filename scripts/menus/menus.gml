@@ -66,7 +66,6 @@ function draw_pause_menu() {
 			_spr_index += 1;
 			
 			if mouse_check_button_pressed(mb_left) {
-				show_debug_message(_item.name);
 				pause_menu_button_interactions(_item.name);
 			}
 		}

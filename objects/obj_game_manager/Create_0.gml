@@ -36,5 +36,16 @@ pause_width = 300;
 pause_height = 200;
 
 
+// Day settings
+in_game_day = 1; // Increase this at the "close" of every day
+day_length = 300; // 5 min each day
+day_length_current = 300; // Reset this each day
+
+
+// Dining area
+max_dining_capacity = 8; // Don't spawn more than this many customers at least yet
+
+
+
 // For drawing the menus this depth needs to be the menu depth
 depth = depth_menus;

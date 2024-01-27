@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_host_stand",
+  "name": "obj_door_main",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "kitchen",
-    "path": "folders/Objects/kitchen.yy",
+    "name": "dining_area",
+    "path": "folders/Objects/dining_area.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dummy_2",
-    "path": "sprites/spr_dummy_2/spr_dummy_2.yy",
+    "name": "spr_door_main",
+    "path": "sprites/spr_door_main/spr_door_main.yy",
   },
   "spriteMaskId": null,
   "visible": true,
