@@ -30,7 +30,7 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Lettuce and Buns~~ | N/A | Done |
 | ~~Menu/Options~~ | N/A | Done (For Now) |
 | Customer Order | N/A | Started |
-| "Serve" Customer | N/A | Not Started |
+| "Serve" Customer | N/A | Started |
 | Clean Mess | N/A | Not Started |
 | ... | ... | ... |
 
