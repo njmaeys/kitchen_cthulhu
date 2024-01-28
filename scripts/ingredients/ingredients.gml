@@ -133,3 +133,16 @@ function interaction_progress(_total, _current) {
 	var _percentage_whole = 100 * ((_total - _current) / _total);
 	return floor(_percentage_whole);
 }
+
+function orderable_items() {
+	var _all = all_possible_ingredients();
+	
+	return {
+		burger_bun_top: _all.burger_bun_top,
+		burger_bun_bottom: _all.burger_bun_bottom,
+		burger_cooked: _all.burger_cooked,
+		tomato_chopped: _all.tomato_chopped,
+		lettuce_chopped: _all.lettuce_chopped,
+		cheese_chopped: _all.cheese_chopped,
+	}
+}
