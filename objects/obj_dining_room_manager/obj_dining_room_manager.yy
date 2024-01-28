@@ -1,15 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_door_main",
+  "name": "obj_dining_room_manager",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "dining_area",
-    "path": "folders/Objects/dining_area.yy",
+    "name": "managers",
+    "path": "folders/Objects/managers.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_door_main",
-    "path": "sprites/spr_door_main/spr_door_main.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

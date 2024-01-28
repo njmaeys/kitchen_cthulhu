@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0bbe5d45-cd64-4f2d-9aff-55968198619d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 9,
   "parent": {
     "name": "dining_area",
     "path": "folders/Sprites/dining_area.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
-    "yorigin": 0,
+    "yorigin": 62,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

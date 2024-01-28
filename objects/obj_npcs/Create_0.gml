@@ -29,17 +29,17 @@ sprite_index_moving = sprs.spr_moving;
 sprite_index_idle = sprs.spr_idle;
 
 
-/*
+// When spawned into the layer it needs to start on the path and set itself into
+// the array on the dining area tracker
+can_roam = false; // Don't try to reset the direction until it hits the end of the path
 
-TODO: When picking up next start getting the npcs to select a burger at random.
-This needs to be displayed above their head as they walk around and it needs to be
-on a timer that if they don't get after x amount of time they will leave.
-
-Need to have the burger collision with NPC be checked and on success do a thing.
-Either way if the NPC get's a burger they will leave. If it's good then money go up
-if it's bad then... I'm not sure yet but some sort of consequence
-
-*/
-
+array_push(obj_dining_room_manager.dining_currently, self);
+path_to_follow = pth_enter_exit;
+path_start(
+	path_to_follow,
+	move_speed,
+	path_action_stop,
+	false
+);
 
 
