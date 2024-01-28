@@ -175,6 +175,11 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 
 
 function stove_cook_item(_index) {
+	if obj_game_manager.game_paused {
+		// If the game is paused the timer should halt
+		return;
+	}
+	
 	if currently_holding_cooking_timers[_index] > 0 {
 		currently_holding_cooking_timers[_index] -= 1;
 		return;
@@ -195,6 +200,11 @@ function stove_cook_item(_index) {
 }
 
 function stove_burn_item(_index) {
+	if obj_game_manager.game_paused {
+		// If the game is paused the timer should halt
+		return;
+	}
+	
 	if currently_holding_burning_timers[_index] > 0 {
 		currently_holding_burning_timers[_index] -= 1;
 		return;

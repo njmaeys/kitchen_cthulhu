@@ -76,6 +76,11 @@ function npc_order_burger() {
 		tomato_chopped: -1,
 	}
 	
+	// Send all the starting images into the display array
+	array_push(queue_display, obj_ingredient_manager.all_ingredients.burger_bun.spr);
+	array_push(queue_display, obj_ingredient_manager.all_ingredients.burger_cooked.spr);
+
+	
 	// NOTE: Uncomment or Comment this for statement to make burger orders easy during testing
 	for (var _i = 0; _i < array_length(_random_choices); _i += 1) {
 		var _item = _random_choices[_i]
@@ -92,14 +97,17 @@ function npc_order_burger() {
 		switch _item.name {
 			case "cheese_chopped": 
 				_temp_currently_plated.cheese_chopped = _item.insert;
+				array_push(queue_display, _item.insert.spr);
 				continue;
 				
 			case "lettuce_chopped": 
 				_temp_currently_plated.lettuce_chopped = _item.insert;
+				array_push(queue_display, _item.insert.spr);
 				continue;
 				
 			case "tomato_chopped": 
 				_temp_currently_plated.tomato_chopped = _item.insert;
+				array_push(queue_display, _item.insert.spr);
 				continue;
 		}
 	}

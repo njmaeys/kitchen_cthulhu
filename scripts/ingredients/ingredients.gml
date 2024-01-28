@@ -130,6 +130,7 @@ function interaction_progress(_total, _current) {
 	
 	Pass in the expected total (_total) amount of time and current (_current) amount of time left
 	*/
+	
 	var _percentage_whole = 100 * ((_total - _current) / _total);
 	return floor(_percentage_whole);
 }

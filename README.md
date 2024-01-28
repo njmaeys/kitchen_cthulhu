@@ -31,12 +31,13 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Menu/Options~~ | N/A | Done (For Now) |
 | ~~Customer Order~~ | N/A | Done |
 | ~~"Serve" Customer~~ | N/A | Done |
-| Burger Collision Improvement | N/A | Not Started |
+| Current Cooking Queue | N/A | Started |
 | Customer Leave (Pay if successful) | N/A | Not Started |
 | Create/Clean Mess | N/A | Not Started |
 | Day Tracker to Start/End Day | N/A | Not Started |
 | Clean Mess | N/A | Not Started |
 | Day Progression | N/A | Not Started |
+| Burger Collision Improvement | N/A | Not Started |
 | ... | ... | ... |
 
 ---

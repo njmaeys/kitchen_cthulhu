@@ -124,6 +124,11 @@ function counter_chop_item() {
 		return;
 	}
 	
+	if obj_game_manager.game_paused {
+		// If the game is paused the timer should halt
+		return;
+	}
+	
 	if chop_timer > 0 {
 		if currently_holding != -1 
 			and obj_player.currently_carrying == -1

@@ -15,6 +15,13 @@ for (var _i = 0; _i < array_length(obj_dining_room_manager.dining_currently); _i
 		else {
 			other.order_successful = false;
 		}
+		
+		// Regardless of order outcome remove the item from the dining list
+		array_delete(
+			obj_dining_room_manager.dining_currently,
+			_i,
+			1
+		);
 		break;
 	}
 }

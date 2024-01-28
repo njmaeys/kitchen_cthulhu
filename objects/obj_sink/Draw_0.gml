@@ -15,6 +15,11 @@ if player_nearby
 	var _wash_progress_percentage = interaction_progress(obj_player.plate_inst.wash_time_max, obj_player.plate_inst.wash_time);
 	draw_progress_meeter(_wash_progress_percentage, x, y-6, 0, spr_progress_meter);
 
+	if obj_game_manager.game_paused {
+		// If the game is paused the timer should halt
+		return;
+	}
+	
 	if mouse_check_button(mb_left) {
 		obj_player.plate_inst.currently_washing = true;
 		obj_player.plate_inst.image_alpha = 0;

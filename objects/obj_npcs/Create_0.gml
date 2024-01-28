@@ -42,10 +42,14 @@ path_start(
 	false
 );
 
+// Set what should be displayed in the queue tracker
+queue_display = [];
 
 // Track the order
 has_items = false;
 order_items = orderable_items();
 currently_plated = npc_order_burger();
+
+
 
 
