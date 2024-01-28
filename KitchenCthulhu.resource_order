@@ -72,6 +72,7 @@
     {"name":"spr_npc_idle_red","order":3,"path":"sprites/spr_npc_idle_red/spr_npc_idle_red.yy",},
     {"name":"spr_progress_meter","order":2,"path":"sprites/spr_progress_meter/spr_progress_meter.yy",},
     {"name":"obj_stove_top","order":1,"path":"objects/obj_stove_top/obj_stove_top.yy",},
+    {"name":"spr_npc_intention_indicator","order":4,"path":"sprites/spr_npc_intention_indicator/spr_npc_intention_indicator.yy",},
     {"name":"obj_par_environment","order":1,"path":"objects/obj_par_environment/obj_par_environment.yy",},
     {"name":"spr_sink_washing","order":12,"path":"sprites/spr_sink_washing/spr_sink_washing.yy",},
     {"name":"obj_trashcan","order":2,"path":"objects/obj_trashcan/obj_trashcan.yy",},

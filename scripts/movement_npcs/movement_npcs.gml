@@ -63,3 +63,27 @@ function npc_reset_move_dir() {
 }
 
 
+function npc_spawn_in_dining_area() {
+	var _dining_count = array_length(dining_currently);
+	if _dining_count < dining_max 
+		and spawn_diner_cooldown_current == 0
+	{
+		// Spawn a diner
+		spawn_diner_cooldown_current = spawn_diner_cooldown_max;
+		instance_create_depth(
+			start_x,
+			start_y,
+			obj_door_main.depth - 1,
+			obj_npcs
+		);
+
+	}
+	else {
+		if spawn_diner_cooldown_current == 0 {
+			spawn_diner_cooldown_current = spawn_diner_cooldown_max;
+		}
+		else {
+			spawn_diner_cooldown_current -= 1;
+		}
+}
+}

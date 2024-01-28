@@ -33,7 +33,7 @@ sprite_index_idle = sprs.spr_idle;
 // the array on the dining area tracker
 can_roam = false; // Don't try to reset the direction until it hits the end of the path
 
-array_push(obj_dining_room_manager.dining_currently, self);
+array_push(obj_dining_room_manager.dining_currently, self.id);
 path_to_follow = pth_enter_exit;
 path_start(
 	path_to_follow,
@@ -42,4 +42,9 @@ path_start(
 	false
 );
 
+
+// Track the order
+has_items = false;
+order_items = orderable_items();
+npc_order_burger();
 

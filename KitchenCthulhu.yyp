@@ -105,6 +105,7 @@
     {"id":{"name":"movement_npcs","path":"scripts/movement_npcs/movement_npcs.yy",},},
     {"id":{"name":"spr_progress_meter","path":"sprites/spr_progress_meter/spr_progress_meter.yy",},},
     {"id":{"name":"obj_stove_top","path":"objects/obj_stove_top/obj_stove_top.yy",},},
+    {"id":{"name":"spr_npc_intention_indicator","path":"sprites/spr_npc_intention_indicator/spr_npc_intention_indicator.yy",},},
     {"id":{"name":"fridge","path":"scripts/fridge/fridge.yy",},},
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
     {"id":{"name":"spr_sink_washing","path":"sprites/spr_sink_washing/spr_sink_washing.yy",},},
