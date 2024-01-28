@@ -4,8 +4,6 @@
 
 // TODO: Move to function
 if array_length(obj_dining_room_manager.dining_currently) > 0 {
-	show_debug_message("\n### Burger cook queue ###");
-	
 	
 	for (var _i = 0; _i < array_length(obj_dining_room_manager.dining_currently); _i += 1) {
 		var _npc = obj_dining_room_manager.dining_currently[_i]

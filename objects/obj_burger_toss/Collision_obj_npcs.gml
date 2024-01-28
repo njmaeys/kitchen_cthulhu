@@ -22,6 +22,8 @@ for (var _i = 0; _i < array_length(obj_dining_room_manager.dining_currently); _i
 			_i,
 			1
 		);
+
+		
 		break;
 	}
 }

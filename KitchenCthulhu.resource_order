@@ -92,6 +92,7 @@
     {"name":"spr_burger","order":4,"path":"sprites/spr_burger/spr_burger.yy",},
     {"name":"_notes","order":3,"path":"scripts/_notes/_notes.yy",},
     {"name":"rm_panda_blade_screen","order":2,"path":"rooms/rm_panda_blade_screen/rm_panda_blade_screen.yy",},
+    {"name":"pth_exit","order":1,"path":"paths/pth_exit/pth_exit.yy",},
     {"name":"obj_open_sign","order":2,"path":"objects/obj_open_sign/obj_open_sign.yy",},
     {"name":"plate_stack","order":5,"path":"scripts/plate_stack/plate_stack.yy",},
     {"name":"spr_npc_idle_blue","order":1,"path":"sprites/spr_npc_idle_blue/spr_npc_idle_blue.yy",},
