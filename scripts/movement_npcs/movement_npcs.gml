@@ -85,5 +85,5 @@ function npc_spawn_in_dining_area() {
 		else {
 			spawn_diner_cooldown_current -= 1;
 		}
-}
+	}
 }

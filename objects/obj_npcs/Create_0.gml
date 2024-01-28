@@ -2,7 +2,7 @@
 
 can_leave = false;
 reset_move_dir = true;
-move_speed = 1;
+move_speed = 0.5;
 is_moving = false;
 move_left = -1;
 move_right = -1;
@@ -32,7 +32,7 @@ sprite_index_idle = sprs.spr_idle;
 // When spawned into the layer it needs to start on the path and set itself into
 // the array on the dining area tracker
 can_roam = false; // Don't try to reset the direction until it hits the end of the path
-
+order_successful = -1;
 array_push(obj_dining_room_manager.dining_currently, self.id);
 path_to_follow = pth_enter_exit;
 path_start(
@@ -46,5 +46,6 @@ path_start(
 // Track the order
 has_items = false;
 order_items = orderable_items();
-npc_order_burger();
+currently_plated = npc_order_burger();
+
 

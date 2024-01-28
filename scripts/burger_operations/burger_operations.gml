@@ -76,6 +76,7 @@ function npc_order_burger() {
 		tomato_chopped: -1,
 	}
 	
+	// NOTE: Uncomment or Comment this for statement to make burger orders easy during testing
 	for (var _i = 0; _i < array_length(_random_choices); _i += 1) {
 		var _item = _random_choices[_i]
 		
@@ -103,19 +104,28 @@ function npc_order_burger() {
 		}
 	}
 	
-	currently_plated = _temp_currently_plated;
+	return _temp_currently_plated;
 }
 
 
-function npce_draw_burger_order_state() {
-	// This is used to draw the container for the burger.
-	// Also used for elipses during order phase.
-	// Also where to display the happy/angry face on delivery of burger
+function npc_draw_burger_order_state() {
+	// This is used to draw the container for the burger and NPC happy/sad
+
+	var _spr_index = 0;
+	
+	if order_successful == true {
+		_spr_index = 2;
+	}
+	
+	if order_successful == false {
+		_spr_index = 1;
+	}
+	
 	var _plated_items_x_offset = x - 11;
 	var _plated_items_y_offset = y - 56;
 	draw_sprite(
 		spr_npc_intention_indicator,
-		0,
+		_spr_index,
 		_plated_items_x_offset,
 		_plated_items_y_offset
 	);
@@ -158,4 +168,36 @@ function npc_draw_burger_order() {
 	
 		_plated_items_y_offset -= 2;
 	}
+}
+
+
+function order_matches_delivered(_ordered, _delivered) {
+	var _keys = variable_struct_get_names(_ordered);
+	
+    for (var _i = array_length(_keys) - 1; _i >= 0; --_i) {
+			// Key should be shared between the two
+            var _key = _keys[_i];
+			//show_debug_message($"Key: {_key}");
+			
+			// Check the two structs
+            var _value_ordered = _ordered[$ _key];
+            var _value_delivered = _delivered[$ _key];
+
+			// These two if statements are kinda jank but whatever it works...
+			if _value_ordered == -1
+				and _value_delivered != -1
+			{
+				// As soon as one thing is wrong just kick out. ALL must match
+				return false;
+			}
+			
+			if _value_ordered != -1
+				and _value_delivered == -1 {
+				// As soon as one thing is wrong just kick out. ALL must match
+				return false;
+			}
+			
+    }
+	
+	return true;
 }
