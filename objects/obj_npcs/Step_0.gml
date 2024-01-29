@@ -22,12 +22,23 @@ movement_npcs();
 if order_successful != -1 {
 	can_leave = true;
 
+
 	/*
-	TODO: When I come back I need to pick up from here to get the NPC to start to leave.
-	I need the NPC to begin to move towards the path exit and then when it hit's the path
-	exit just follow the path. I'm not sure how to really handle this all that well just yet
-	so this is going to take some toying around with 
+	Bugs found by Kaitlin
+	
+	Place plate under item on counter
+	
+	Dirty plate is making order incorrect with F key 
+	
+	Fridge menu open can select item from counter next to it
+	
+	Leave plate in sink?
+	
+	Stack items not on plate and just on bare counter
+	
+	Clean plate hit F made dirty
 	*/
+	
 }
 
 
