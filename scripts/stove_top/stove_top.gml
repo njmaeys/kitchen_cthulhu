@@ -157,6 +157,7 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 				
 				if obj_player.plate_inst != -1
 					and (obj_player.plate_inst.has_items or obj_player.plate_inst.is_clean)
+					and currently_holding[_i].name == "burger_cooked"
 				{
 					plate_item_from_counter(currently_holding[_i].name);
 					currently_holding[_i] = -1;
