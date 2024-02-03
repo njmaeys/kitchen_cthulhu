@@ -73,7 +73,7 @@ function all_possible_ingredients() {
 			needs_chopped: false,
 			chop_time: 0,
 			needs_cooked: true,
-			cook_time: 240,
+			cook_time: 600,
 			burn_time: 0,
 		},
 		burger_cooked: {
@@ -83,7 +83,7 @@ function all_possible_ingredients() {
 			chop_time: 0,
 			needs_cooked: false,
 			cook_time: 0,
-			burn_time: 240,
+			burn_time: 480,
 		},
 		burger_burnt: {
 			spr: spr_burger_burnt,
@@ -130,6 +130,7 @@ function interaction_progress(_total, _current) {
 	
 	Pass in the expected total (_total) amount of time and current (_current) amount of time left
 	*/
+	
 	var _percentage_whole = 100 * ((_total - _current) / _total);
 	return floor(_percentage_whole);
 }

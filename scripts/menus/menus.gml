@@ -12,9 +12,9 @@ function draw_pause_menu() {
 		1
 	);
 	
-	// Interaction diagram
+	// Interaction and movement diagram
 	var _interactions_offset_x = _menu_x + 16;
-	var _interactions_offset_y = _menu_y;
+	var _interactions_offset_y = _menu_y + 4;
 	draw_sprite(
 		spr_menu_interactions,
 		0,
