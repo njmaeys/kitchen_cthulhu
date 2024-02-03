@@ -9,7 +9,9 @@ if is_being_carried {
 	depth = obj_game_manager.depth_deliverables;
 	
 	// Throw the burger off the plate and set it to dirty
-	if keyboard_check_pressed(ord("F")) {
+	if keyboard_check_pressed(vk_space) 
+		and has_items
+	{
 		throw_burger();
 	}
 }

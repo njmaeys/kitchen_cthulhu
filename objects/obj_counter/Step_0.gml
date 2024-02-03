@@ -11,7 +11,9 @@ mouse_hovering = mouse_hovering_location(_x1, _y1, _x2, _y2);
 
 // Player checks
 player_nearby = close_to_player();
-if currently_holding == -1 {
+if currently_holding == -1 
+	or obj_player.plate_inst != -1
+{
 	counter_place_item();
 }
 else {
