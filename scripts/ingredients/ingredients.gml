@@ -73,7 +73,7 @@ function all_possible_ingredients() {
 			needs_chopped: false,
 			chop_time: 0,
 			needs_cooked: true,
-			cook_time: 240,
+			cook_time: 600,
 			burn_time: 0,
 		},
 		burger_cooked: {
@@ -83,7 +83,7 @@ function all_possible_ingredients() {
 			chop_time: 0,
 			needs_cooked: false,
 			cook_time: 0,
-			burn_time: 240,
+			burn_time: 480,
 		},
 		burger_burnt: {
 			spr: spr_burger_burnt,

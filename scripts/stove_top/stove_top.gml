@@ -146,13 +146,23 @@ function stove_take_item(_slot_x_offset_pickup, _slot_y_offset_pickup) {
 			
 			// If the player uses the interactive slot the stove top
 			if mouse_check_button_pressed(mb_left) 
-				and obj_player.currently_carrying == -1
 				and just_placed_item_cooldown == 0 // Account for the damn quick click thing with the mouse
 			{
-				obj_player.currently_carrying = currently_holding[_i];
-				currently_holding[_i] = -1;
-				just_placed_item_cooldown = 5;
-				break;
+				if obj_player.currently_carrying == -1 {
+					obj_player.currently_carrying = currently_holding[_i];
+					currently_holding[_i] = -1;
+					just_placed_item_cooldown = 5;
+					break;
+				}
+				
+				if obj_player.plate_inst != -1
+					and (obj_player.plate_inst.has_items or obj_player.plate_inst.is_clean)
+				{
+					plate_item_from_counter(currently_holding[_i].name);
+					currently_holding[_i] = -1;
+					just_placed_item_cooldown = 5;
+					break;
+				}
 			}
 		}
 	

@@ -8,7 +8,8 @@ function counter_place_item() {
 		and mouse_hovering
 		and mouse_check_button_pressed(mb_left)
 	{
-		plate_item_from_counter();
+		plate_item_from_counter(currently_holding.name);
+		currently_holding = -1;
 		return;
 	}
 	
@@ -186,8 +187,8 @@ function counter_chop_item() {
 	}
 }
 
-function plate_item_from_counter() {
-	switch currently_holding.name {
+function plate_item_from_counter(_item_name) {
+	switch _item_name {
 		case "burger_bun":
 			// This one is a bit different than the rest. It sets two items at once burger_bun_bottom and burger_bun_top
 			if obj_player.plate_inst.currently_plated.burger_bun_top != -1 {
@@ -197,7 +198,6 @@ function plate_item_from_counter() {
 			obj_player.plate_inst.currently_plated.burger_bun_bottom = obj_ingredient_manager.all_ingredients.burger_bun_bottom;
 			obj_player.plate_inst.currently_plated.burger_bun_top = obj_ingredient_manager.all_ingredients.burger_bun_top;
 			obj_player.plate_inst.is_clean = false;
-			currently_holding = -1;
 			return;
 				
 		case "burger_cooked":
@@ -207,7 +207,6 @@ function plate_item_from_counter() {
 			
 			obj_player.plate_inst.currently_plated.burger_cooked = obj_ingredient_manager.all_ingredients.burger_cooked;
 			obj_player.plate_inst.is_clean = false;
-			currently_holding = -1;
 			return;
 				
 		case "tomato_chopped":
@@ -217,7 +216,6 @@ function plate_item_from_counter() {
 				
 			obj_player.plate_inst.currently_plated.tomato_chopped = obj_ingredient_manager.all_ingredients.tomato_chopped;
 			obj_player.plate_inst.is_clean = false;
-			currently_holding = -1;
 			return;
 				
 		case "cheese_chopped":
@@ -227,7 +225,6 @@ function plate_item_from_counter() {
 				
 			obj_player.plate_inst.currently_plated.cheese_chopped = obj_ingredient_manager.all_ingredients.cheese_chopped;
 			obj_player.plate_inst.is_clean = false;
-			currently_holding = -1;
 			return;
 				
 		case "lettuce_chopped":
@@ -237,7 +234,6 @@ function plate_item_from_counter() {
 				
 			obj_player.plate_inst.currently_plated.lettuce_chopped = obj_ingredient_manager.all_ingredients.lettuce_chopped;
 			obj_player.plate_inst.is_clean = false;
-			currently_holding = -1;
 			return;
 	}
 }
