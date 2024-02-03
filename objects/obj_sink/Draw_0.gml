@@ -20,7 +20,7 @@ if player_nearby
 		return;
 	}
 	
-	if mouse_check_button(mb_left) {
+	if mouse_check_button(mb_right) {
 		obj_player.plate_inst.currently_washing = true;
 		obj_player.plate_inst.image_alpha = 0;
 		

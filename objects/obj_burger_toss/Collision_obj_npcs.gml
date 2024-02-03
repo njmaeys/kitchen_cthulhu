@@ -11,6 +11,7 @@ for (var _i = 0; _i < array_length(obj_dining_room_manager.dining_currently); _i
 		
 		if order_matches_delivered(other.currently_plated, currently_plated) {
 			other.order_successful = true;
+			obj_player_information_displays.current_money += other.order_cost;
 		}
 		else {
 			other.order_successful = false;

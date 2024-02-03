@@ -32,6 +32,8 @@
     {"name":"player","order":4,"path":"folders/Sprites/player.yy",},
     {"name":"tile_sets","order":5,"path":"folders/Sprites/tile_sets.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
+    {"name":"money","order":12,"path":"folders/Sprites/money.yy",},
+    {"name":"information_displays","order":8,"path":"folders/Scripts/information_displays.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_plate_stack","order":5,"path":"objects/obj_plate_stack/obj_plate_stack.yy",},

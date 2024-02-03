@@ -53,7 +53,8 @@ queue_display = [];
 // Track the order
 has_items = false;
 order_items = orderable_items();
-currently_plated = npc_order_burger();
+order_cost = 1; // Start as 1 for plain burger and add 1 for each additional thingy requested
+currently_plated = npc_order_burger(); // This is what they orderd. Dumb name but I did copy paste things
 
 
 
