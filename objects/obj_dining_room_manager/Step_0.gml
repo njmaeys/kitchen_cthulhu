@@ -15,7 +15,6 @@ if obj_game_manager.day_current_time > 0 {
 	obj_game_manager.day_current_time -= 1;
 }
 else {
-	// TODO: Have a function to send all NPCs home.
 	// This will NOT count against or for the player they just leave
 	dining_is_open = false;
 	
@@ -25,6 +24,9 @@ else {
 	// Send all NPCs out the door
 	obj_npcs.can_roam = false;
 	obj_npcs.can_leave = true;
+	
+	// Indicate the end of the day
+	obj_game_manager.day_has_ended = true;
 }
 
 

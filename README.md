@@ -34,12 +34,13 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Current Cooking Queue~~ | N/A | Done |
 | ~~Customer Leave~~ | N/A | Done |
 | ~~Customer Pays~~ | N/A | Started |
-| Day Progression | N/A | Started |
-| Day Summary | N/A | Not Started |
+| ~~Burger Collision Improvement~~ | N/A | Done |
+| ~~Day Progression~~ | N/A | Started |
+| ~~Day Summary~~ | N/A | Done |
 | Fail Meter | N/A | Not Started |
-| Create/Clean Mess | N/A | Not Started |
-| Clean Mess | N/A | Not Started |
-| Burger Collision Improvement | N/A | Not Started |
+| Tutorial/How To | N/A | Not Started |
+| Fail Meter | N/A | Not Started |
+| Plan the Creepy Things | N/A | Not Started |
 | ... | ... | ... |
 
 ---

@@ -6,7 +6,6 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_npcs","path":"objects/obj_npcs/obj_npcs.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_burger_destroyer","path":"objects/obj_burger_destroyer/obj_burger_destroyer.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,

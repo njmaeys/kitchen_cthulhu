@@ -1,16 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_information_displays",
+  "name": "obj_bed",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "managers",
-    "path": "folders/Objects/managers.yy",
+    "name": "end_of_day",
+    "path": "folders/Objects/end_of_day.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_player_sleep",
+    "path": "sprites/spr_player_sleep/spr_player_sleep.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -6,7 +6,9 @@ function movement_player() {
 	move_down = keyboard_check(ord("S")) * -1; // -1 otherwise inverted
 
 	// Calc movement but prevent if game is paused
-	if obj_game_manager.game_paused {
+	if obj_game_manager.game_paused 
+		or obj_game_manager.day_has_ended
+	{
 		vx = 0;
 		vy = 0;
 	}

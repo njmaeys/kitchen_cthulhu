@@ -57,5 +57,9 @@ order_cost = 1; // Start as 1 for plain burger and add 1 for each additional thi
 currently_plated = npc_order_burger(); // This is what they orderd. Dumb name but I did copy paste things
 
 
+// Track customer collision box for burger
+burger_collision_box = npc_burger_collison_box();
+
+
 
 
