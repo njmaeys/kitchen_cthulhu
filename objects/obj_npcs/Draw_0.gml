@@ -5,9 +5,10 @@ draw_self();
 
 
 
-if can_roam {
+if can_roam 
+	and obj_dining_room_manager.dining_is_open
+{
 	// TODO: Put an "order" timer and "patience" timer in here
-	// TODO: Put in happy and angry "emjoi" when they get it correct or wrong
 	npc_draw_burger_order_state();
 
 	if order_successful == -1 {

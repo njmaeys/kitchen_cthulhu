@@ -37,9 +37,10 @@ pause_height = 200;
 
 
 // Day settings
+one_min_len = 60 * 60; // 1 min (60 fps * 60 == 1 min)
 in_game_day = 1; // Increase this at the "close" of every day
-day_length = 300; // 5 min each day
-day_length_current = 300; // Reset this each day
+day_length_time = one_min_len * 1; // 3 min each day
+day_current_time = day_length_time; // Reset this each day
 
 
 

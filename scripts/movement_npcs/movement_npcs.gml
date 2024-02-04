@@ -87,3 +87,4 @@ function npc_spawn_in_dining_area() {
 		}
 	}
 }
+

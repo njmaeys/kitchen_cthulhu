@@ -1,5 +1,8 @@
 /// @description 
 
+if not obj_dining_room_manager.dining_is_open {
+	return;
+}
 
 
 // If it hits an NPC then destroy it and do checks if the burger was correct or not
