@@ -98,16 +98,19 @@ function npc_order_burger() {
 			case "cheese_chopped": 
 				_temp_currently_plated.cheese_chopped = _item.insert;
 				array_push(queue_display, _item.insert.spr);
+				order_cost += 1;
 				continue;
 				
 			case "lettuce_chopped": 
 				_temp_currently_plated.lettuce_chopped = _item.insert;
 				array_push(queue_display, _item.insert.spr);
+				order_cost += 1;
 				continue;
 				
 			case "tomato_chopped": 
 				_temp_currently_plated.tomato_chopped = _item.insert;
 				array_push(queue_display, _item.insert.spr);
+				order_cost += 1;
 				continue;
 		}
 	}

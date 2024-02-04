@@ -8,8 +8,10 @@ function counter_place_item() {
 		and mouse_hovering
 		and mouse_check_button_pressed(mb_left)
 	{
-		plate_item_from_counter(currently_holding.name);
-		currently_holding = -1;
+		var _plate_item = plate_item_from_counter(currently_holding.name);
+		if _plate_item {
+			currently_holding = -1;
+		}
 		return;
 	}
 	
@@ -198,7 +200,7 @@ function plate_item_from_counter(_item_name) {
 			obj_player.plate_inst.currently_plated.burger_bun_bottom = obj_ingredient_manager.all_ingredients.burger_bun_bottom;
 			obj_player.plate_inst.currently_plated.burger_bun_top = obj_ingredient_manager.all_ingredients.burger_bun_top;
 			obj_player.plate_inst.is_clean = false;
-			return;
+			return true;
 				
 		case "burger_cooked":
 			if obj_player.plate_inst.currently_plated.burger_cooked != -1 {
@@ -207,7 +209,7 @@ function plate_item_from_counter(_item_name) {
 			
 			obj_player.plate_inst.currently_plated.burger_cooked = obj_ingredient_manager.all_ingredients.burger_cooked;
 			obj_player.plate_inst.is_clean = false;
-			return;
+			return true;
 				
 		case "tomato_chopped":
 			if obj_player.plate_inst.currently_plated.tomato_chopped != -1 {
@@ -216,7 +218,7 @@ function plate_item_from_counter(_item_name) {
 				
 			obj_player.plate_inst.currently_plated.tomato_chopped = obj_ingredient_manager.all_ingredients.tomato_chopped;
 			obj_player.plate_inst.is_clean = false;
-			return;
+			return true;
 				
 		case "cheese_chopped":
 			if obj_player.plate_inst.currently_plated.cheese_chopped != -1 {
@@ -225,7 +227,7 @@ function plate_item_from_counter(_item_name) {
 				
 			obj_player.plate_inst.currently_plated.cheese_chopped = obj_ingredient_manager.all_ingredients.cheese_chopped;
 			obj_player.plate_inst.is_clean = false;
-			return;
+			return true;
 				
 		case "lettuce_chopped":
 			if obj_player.plate_inst.currently_plated.lettuce_chopped != -1 {
@@ -234,6 +236,6 @@ function plate_item_from_counter(_item_name) {
 				
 			obj_player.plate_inst.currently_plated.lettuce_chopped = obj_ingredient_manager.all_ingredients.lettuce_chopped;
 			obj_player.plate_inst.is_clean = false;
-			return;
+			return true;
 	}
 }

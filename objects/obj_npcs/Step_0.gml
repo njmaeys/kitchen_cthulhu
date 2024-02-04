@@ -55,6 +55,26 @@ if can_leave {
 
 
 
+// Collision box for burger hits
+// [_x_left, _x_right, _y_bottom, _y_top]
+burger_collision_box = npc_burger_collison_box();
+
+// If it hits an NPC then destroy it and do checks if the burger was correct or not
+if instance_exists(obj_burger_toss)
+	and npc_burger_hit_customer(obj_burger_toss.x_left, obj_burger_toss.y_top, obj_burger_toss.x_right, obj_burger_toss.y_bottom)
+{
+	burger_order_collision_verification();
+	
+	instance_destroy(obj_burger_toss);
+}
+
+
+
+
+
+
+
+
 depth_sort();
 
 

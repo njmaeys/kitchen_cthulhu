@@ -28,7 +28,6 @@ depth_menus = -60000; // Make sure this is always the top most depth drawn
 fullscreen = false;
 
 // Pause menu
-// TODO: If the game is paused any automatic timers need to be paused as well and other moving things need to stop
 game_paused = false;
 pause_x_offset = 150;
 pause_y_offset = 100;
@@ -37,11 +36,16 @@ pause_height = 200;
 
 
 // Day settings
+one_min_len = 60 * 60; // 1 min (60 fps * 60 == 1 min)
 in_game_day = 1; // Increase this at the "close" of every day
-day_length = 300; // 5 min each day
-day_length_current = 300; // Reset this each day
+day_length_time = one_min_len * 3; // 3 min each day
+day_current_time = day_length_time; // Reset this each day
+day_has_ended = false;
 
 
+// Money tracking
+current_money = 0;
+current_cthulhu_money = 0;
 
 
 // For drawing the menus this depth needs to be the menu depth
