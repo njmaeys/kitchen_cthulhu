@@ -17,6 +17,7 @@ function movement_player() {
 
 	// If moving
 	if (vx != 0 || vy != 0) {
+
 		is_moving = true;
 		
 		// Handle collision for movement
@@ -59,7 +60,5 @@ function movement_sprite_direction() {
 	else {
 		sprite_index = sprite_index_idle;
 	}
-	
-
 	
 }
