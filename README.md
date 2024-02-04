@@ -35,11 +35,11 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Customer Leave~~ | N/A | Done |
 | ~~Customer Pays~~ | N/A | Started |
 | ~~Burger Collision Improvement~~ | N/A | Done |
-| ~~Day Progression~~ | N/A | Started |
+| ~~Day Progression~~ | N/A | Done |
 | ~~Day Summary~~ | N/A | Done |
+| Patience Meter | N/A | Not Started |
 | Fail Meter | N/A | Not Started |
 | Tutorial/How To | N/A | Not Started |
-| Fail Meter | N/A | Not Started |
 | Plan the Creepy Things | N/A | Not Started |
 | ... | ... | ... |
 
