@@ -22,7 +22,6 @@
     {"name":"mouse","order":5,"path":"folders/Scripts/mouse.yy",},
     {"name":"npcs","order":7,"path":"folders/Scripts/npcs.yy",},
     {"name":"player","order":1,"path":"folders/Scripts/player.yy",},
-    {"name":"Shaders","order":9,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
     {"name":"barriers","order":1,"path":"folders/Sprites/barriers.yy",},
     {"name":"dining_area","order":10,"path":"folders/Sprites/dining_area.yy",},
@@ -37,6 +36,9 @@
     {"name":"player","order":4,"path":"folders/Sprites/player.yy",},
     {"name":"tile_sets","order":5,"path":"folders/Sprites/tile_sets.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
+    {"name":"transitions","order":13,"path":"folders/Objects/transitions.yy",},
+    {"name":"transitions","order":10,"path":"folders/Scripts/transitions.yy",},
+    {"name":"transitions","order":14,"path":"folders/Sprites/transitions.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_plate_stack","order":5,"path":"objects/obj_plate_stack/obj_plate_stack.yy",},
