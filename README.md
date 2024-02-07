@@ -37,7 +37,7 @@ Start your kitchen and get cooking. What will find it's way into your restaurant
 | ~~Burger Collision Improvement~~ | N/A | Done |
 | ~~Day Progression~~ | N/A | Done |
 | ~~Day Summary~~ | N/A | Done |
-| Patience Meter | N/A | Not Started |
+| ~~Patience Meter~~ | N/A | Done |
 | Fail Meter | N/A | Not Started |
 | Tutorial/How To | N/A | Not Started |
 | Plan the Creepy Things | N/A | Not Started |

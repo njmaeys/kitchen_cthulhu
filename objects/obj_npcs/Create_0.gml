@@ -56,6 +56,13 @@ order_items = orderable_items();
 order_cost = 1; // Start as 1 for plain burger and add 1 for each additional thingy requested
 currently_plated = npc_order_burger(); // This is what they orderd. Dumb name but I did copy paste things
 
+// Track their patience
+wait_time_start_countdown = false;
+wait_time_max = 3600; // 1 min
+wait_time_current = 0;
+wait_progress_percentage = 0;
+
+
 
 // Track customer collision box for burger
 burger_collision_box = npc_burger_collison_box();

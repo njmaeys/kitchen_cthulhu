@@ -5,6 +5,7 @@ if not can_roam
 	and path_position == 1
 {
 	can_roam = true;
+	wait_time_start_countdown = true;
 }
 
 
@@ -70,6 +71,18 @@ if instance_exists(obj_burger_toss)
 
 
 
+// TODO: Move to function
+if wait_time_start_countdown
+	and wait_time_current < wait_time_max 
+{
+	wait_progress_percentage = 100 - interaction_progress(wait_time_max, wait_time_current);
+	
+	wait_time_current += 1;
+	
+	if wait_time_current == wait_time_max {
+		wait_timer_ran_out();
+	}
+}
 
 
 

@@ -140,6 +140,20 @@ function npc_draw_burger_order_state() {
 		_plated_items_x_offset,
 		_plated_items_y_offset
 	);
+	
+	// Draw the progress percentage
+	if order_successful == -1 {
+		draw_sprite_stretched_ext(
+			spr_progress_meter_danger,
+			0,
+			_plated_items_x_offset + 5,
+			_plated_items_y_offset + 4,
+			14,
+			24 * (wait_progress_percentage / 100),
+			c_white,
+			0.75
+		);
+	}
 }
 
 

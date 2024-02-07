@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
 
 depth = obj_game_manager.depth_menus;
 
