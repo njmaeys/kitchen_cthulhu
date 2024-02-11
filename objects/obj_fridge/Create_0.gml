@@ -16,3 +16,8 @@ draw_ingredients_selection = false;
 // Ingredients
 current_ingredients = -1;
 can_click_ingredient_cooldown = 0;
+
+
+// Fear reflection
+randomize_fear_reflection = true;
+draw_fear_reflection = false;

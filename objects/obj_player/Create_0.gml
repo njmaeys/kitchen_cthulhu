@@ -28,7 +28,7 @@ player_light_source = instance_create_depth(
 	depth - 2,
 	obj_lighting_cutout
 );
-player_light_source.color = c_red;
+player_light_source.color = c_white;
 player_light_source.is_visible = true;
 player_light_source.intensity = 0.1;
 

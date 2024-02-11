@@ -16,6 +16,6 @@ open_sign_light_source = instance_create_depth(
 	obj_lighting_cutout
 );
 open_sign_light_source.color = #0AC9B3;
-open_sign_light_source.intensity = 0.8;
+open_sign_light_source.intensity = 0.5;
 
 

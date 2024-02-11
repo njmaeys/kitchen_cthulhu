@@ -23,4 +23,4 @@ draw_cook_queue();
 // Fear meter
 current_fear_x = obj_game_manager.camera_x - 228;
 current_fear_y = obj_game_manager.camera_y + 88;
-draw_fear_displays();
+//draw_fear_displays();

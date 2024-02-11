@@ -55,8 +55,8 @@ fear_increase_step = 10; // How much to increase by each time
 
 
 // Lighting
-room_darkness_level = 0.1;
-room_darkness_level = 0.8;
+room_darkness_level = 0.1; // I believe 0.9 or darker for the night shift
+
 
 
 // For drawing the menus this depth needs to be the menu depth

@@ -106,5 +106,4 @@ function draw_fear_displays() {
 		c_white,
 		obj_game_manager.fear_current / obj_game_manager.fear_max
 	);
-
 }

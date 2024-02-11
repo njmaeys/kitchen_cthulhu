@@ -25,6 +25,38 @@ if draw_ingredients_selection {
 }
 
 
+// Reflection
+randomize();
+// TODO: Make it only show up sometimes
+if obj_game_manager.fear_current != 0
+	and player_nearby
+{
+	
+	if randomize_fear_reflection {
+		randomize_fear_reflection = false;
+		if irandom_range(0, 5) >= 3 {
+			draw_fear_reflection = true;
+		}
+	}
+	
+	if draw_fear_reflection {
+		draw_sprite_ext(
+			spr_cthulhu_icon_fear_progress,
+			0,
+			x + 16,
+			y + 24,
+			1,
+			1,
+			0,
+			c_white,
+			obj_game_manager.fear_current / obj_game_manager.fear_max
+		);
+	}
+}
+else {
+	randomize_fear_reflection = true;
+	draw_fear_reflection = false;
+}
 
 
 
