@@ -19,3 +19,16 @@ currently_carrying_x_scale = 1;
 
 // Currently Chopping
 player_chopping = false;
+
+
+// Create the player lighting
+player_light_source = instance_create_depth(
+	x,
+	y,
+	depth - 2,
+	obj_lighting_cutout
+);
+player_light_source.color = c_red;
+player_light_source.is_visible = true;
+player_light_source.intensity = 0.1;
+

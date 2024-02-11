@@ -54,6 +54,11 @@ fear_current = 0;
 fear_increase_step = 10; // How much to increase by each time
 
 
+// Lighting
+room_darkness_level = 0.1;
+room_darkness_level = 0.8;
+
+
 // For drawing the menus this depth needs to be the menu depth
 depth = depth_menus;
 

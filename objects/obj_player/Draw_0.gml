@@ -1,6 +1,10 @@
 /// @description 
 
 
+// Lighting
+if player_light_source.is_visible {
+	draw_light_color_under_obj(player_light_source);
+}
 
 // Make sure the draw self is "under" any other carried item
 draw_self();
@@ -35,3 +39,4 @@ if currently_carrying != -1 {
 		1
 	);
 }
+

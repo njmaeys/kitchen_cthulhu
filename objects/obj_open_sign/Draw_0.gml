@@ -1,8 +1,12 @@
 /// @description
 
 
-draw_self();
+// Draw the lighting
+if open_sign_light_source.is_visible {
+	draw_light_color_under_obj(open_sign_light_source);
+}
 
+draw_self();
 
 
 // TODO: Move to function
@@ -13,8 +17,8 @@ if player_nearby
 	// NOTE: Once the player starts the day they have to progress through. 
 	// Only the end of the day can shut down the dining room
 	if mouse_check_button_pressed(mb_left) {
-		// TODO: Have this also flip the sprite to the open sign on
 		obj_dining_room_manager.dining_is_open = true;
+		open_sign_light_source.is_visible = true;
 	}
 }
 

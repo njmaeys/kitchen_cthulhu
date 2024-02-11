@@ -25,6 +25,12 @@ else {
 
 
 
+// Track and move the player light source
+player_light_source.x = x;
+player_light_source.y = y;
+
+
+
 
 // Depth sort
 depth_sort();
