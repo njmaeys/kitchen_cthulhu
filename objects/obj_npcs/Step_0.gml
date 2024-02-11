@@ -1,5 +1,9 @@
 /// @description 
 
+if obj_game_manager.game_paused {
+	return;
+}
+
 
 if not can_roam 
 	and path_position == 1

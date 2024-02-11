@@ -48,3 +48,13 @@ if player_nearby
 	}
 }
 
+if not mouse_hovering
+	 and sprite_index = spr_sink_washing 
+{
+	sprite_index = spr_sink;
+	
+	if obj_player.plate_inst != -1 {
+		obj_player.plate_inst.currently_washing = false;
+		obj_player.plate_inst.image_alpha = 1;
+	}
+}

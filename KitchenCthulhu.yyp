@@ -70,6 +70,7 @@
     {"id":{"name":"bun_and_lettuce_container","path":"scripts/bun_and_lettuce_container/bun_and_lettuce_container.yy",},},
     {"id":{"name":"spr_money","path":"sprites/spr_money/spr_money.yy",},},
     {"id":{"name":"obj_counter","path":"objects/obj_counter/obj_counter.yy",},},
+    {"id":{"name":"spr_cthulhu_icon_fear_progress","path":"sprites/spr_cthulhu_icon_fear_progress/spr_cthulhu_icon_fear_progress.yy",},},
     {"id":{"name":"spr_main_menu","path":"sprites/spr_main_menu/spr_main_menu.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"spr_door_main","path":"sprites/spr_door_main/spr_door_main.yy",},},

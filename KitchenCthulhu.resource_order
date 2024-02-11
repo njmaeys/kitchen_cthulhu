@@ -47,6 +47,7 @@
     {"name":"spr_end_day","order":13,"path":"sprites/spr_end_day/spr_end_day.yy",},
     {"name":"bun_and_lettuce_container","order":6,"path":"scripts/bun_and_lettuce_container/bun_and_lettuce_container.yy",},
     {"name":"obj_counter","order":3,"path":"objects/obj_counter/obj_counter.yy",},
+    {"name":"spr_cthulhu_icon_fear_progress","order":2,"path":"sprites/spr_cthulhu_icon_fear_progress/spr_cthulhu_icon_fear_progress.yy",},
     {"name":"spr_main_menu","order":10,"path":"sprites/spr_main_menu/spr_main_menu.yy",},
     {"name":"rm_main_menu","order":1,"path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"spr_dummy_2","order":1,"path":"sprites/spr_dummy_2/spr_dummy_2.yy",},

@@ -93,3 +93,18 @@ function draw_day_timer() {
 		5
 	);
 }
+
+function draw_fear_displays() {
+	draw_sprite_ext(
+		spr_cthulhu_icon_fear_progress,
+		0,
+		current_fear_x,
+		current_fear_y,
+		1,
+		1,
+		0,
+		c_white,
+		obj_game_manager.fear_current / obj_game_manager.fear_max
+	);
+
+}
