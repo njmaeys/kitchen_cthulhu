@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_temp_background.mp3",
   "type": 1,
-  "volume": 0.02,
+  "volume": 0.01,
 }
