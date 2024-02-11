@@ -91,6 +91,7 @@ function stove_place_item(_slot_x_offset, _slot_y_offset) {
 			);
 			
 			if currently_holding[_i].cook_time > 0 {
+				currently_cooking_something = true;
 				stove_cook_item(_i);
 				if currently_holding_cooking_timers[_i] > 0 {
 					var _cook_progress_percentage = interaction_progress(currently_holding[_i].cook_time, currently_holding_cooking_timers[_i]);
@@ -208,6 +209,8 @@ function stove_cook_item(_index) {
 	if currently_holding_burning_timers[_index] <= 0 {
 		currently_holding_burning_timers[_index] = currently_holding[_index].burn_time;
 	}
+	
+	
 }
 
 function stove_burn_item(_index) {
@@ -229,3 +232,50 @@ function stove_burn_item(_index) {
 		}
 	}
 }
+
+
+function play_cook_burger_sound() {
+	currently_cooking_something = false;
+	
+	var _max_dist_away = 256;
+	var _snd_multiplier_dist = distance_to_object(obj_player);
+	if _snd_multiplier_dist > _max_dist_away {
+		_snd_multiplier_dist = _max_dist_away;
+	}
+	var _snd_multiplier = (_max_dist_away - _snd_multiplier_dist) / _max_dist_away
+	
+	for (var _i = 0; _i < array_length(currently_holding); _i += 1) {
+		var _slot = currently_holding[_i]
+		if _slot == -1 {
+			continue;
+		}
+	
+		if currently_holding[_i].cook_time > 0 
+			or currently_holding[_i].burn_time > 0
+		{
+			currently_cooking_something = true;
+			break;
+		}
+	}
+	if currently_cooking_something {
+		if not audio_is_playing(snd_burger_cook) {
+			audio_play_sound(
+				snd_burger_cook,
+				1,
+				true,
+				cooking_sound_gain * _snd_multiplier
+			);
+		}
+		audio_sound_gain(
+			snd_burger_cook,
+			cooking_sound_gain * _snd_multiplier,
+			0
+		);
+	}
+	else {
+		if audio_is_playing(snd_burger_cook) {
+			audio_stop_sound(snd_burger_cook);
+		}
+	}
+}
+

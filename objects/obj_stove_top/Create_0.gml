@@ -9,6 +9,8 @@ currently_holding = -1;
 // another set of data structures
 currently_holding_cooking_timers = -1;
 currently_holding_burning_timers = -1;
+currently_cooking_something = false;
+cooking_sound_gain = 0.55;
 
 
 mouse_hovering = false;

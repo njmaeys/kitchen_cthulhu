@@ -24,6 +24,15 @@ if player_nearby
 		obj_player.plate_inst.currently_washing = true;
 		obj_player.plate_inst.image_alpha = 0;
 		
+		// Sound running water
+		if not audio_is_playing(snd_sink_running) {
+			audio_play_sound(
+				snd_sink_running,
+				1,
+				true
+			);
+		}
+		
 		// Draw the washing stuff
 		if sprite_index != spr_sink_washing {
 			sprite_index = spr_sink_washing;
@@ -38,6 +47,11 @@ if player_nearby
 			obj_player.plate_inst.currently_washing = false;
 			obj_player.plate_inst.image_alpha = 1;
 			sprite_index = spr_sink;
+			
+			// Sound running water
+			if audio_is_playing(snd_sink_running) {
+				audio_stop_sound(snd_sink_running);
+			}
 		}
 
 	}
@@ -45,6 +59,11 @@ if player_nearby
 		obj_player.plate_inst.currently_washing = false;
 		obj_player.plate_inst.image_alpha = 1;
 		sprite_index = spr_sink;
+		
+		// Sound running water
+		if audio_is_playing(snd_sink_running) {
+			audio_stop_sound(snd_sink_running);
+		}
 	}
 }
 
@@ -52,6 +71,11 @@ if not mouse_hovering
 	 and sprite_index = spr_sink_washing 
 {
 	sprite_index = spr_sink;
+	
+	// Sound running water
+	if audio_is_playing(snd_sink_running) {
+		audio_stop_sound(snd_sink_running);
+	}
 	
 	if obj_player.plate_inst != -1 {
 		obj_player.plate_inst.currently_washing = false;

@@ -14,6 +14,10 @@ var _slot_x_offset = x + 8;
 var _slot_y_offset = y - 59;
 stove_place_item(_slot_x_offset, _slot_y_offset);
 
+// Sound of cooking
+// TODO: Make it's sound drop off by distance
+play_cook_burger_sound()
+
 
 
 

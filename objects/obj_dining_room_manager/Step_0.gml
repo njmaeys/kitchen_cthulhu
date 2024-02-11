@@ -27,6 +27,9 @@ else {
 	
 	// Indicate the end of the day
 	obj_game_manager.day_has_ended = true;
+	
+	// Stop all the sound
+	audio_stop_all();
 }
 
 

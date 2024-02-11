@@ -150,6 +150,15 @@ function counter_chop_item() {
 		return;
 	}
 	
+	if mouse_check_button_released(mb_right) 
+		or chop_timer <= 0
+	{
+		control_chop_sound = false;
+		if audio_is_playing(snd_chop) {
+			audio_stop_sound(snd_chop);
+		}
+	}
+	
 	if chop_timer > 0 {
 		if currently_holding != -1 
 			and obj_player.currently_carrying == -1
@@ -160,16 +169,25 @@ function counter_chop_item() {
 			currently_chopping = true;
 			chop_timer -= 1;
 			
+			if not control_chop_sound {
+				control_chop_sound = true;
+			}
+			
 			chop_progress_percentage = interaction_progress(currently_holding.chop_time, chop_timer);
 		}
 		else {
 			currently_chopping = false;
+			if control_chop_sound {
+				control_chop_sound = false;
+			}
 		}
 		return;
 	}
 	
+	
 	// Set the relative chopped item
 	currently_chopping = false;
+	
 	
 	switch currently_holding.name {
 		case "tomato":

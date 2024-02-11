@@ -25,4 +25,5 @@ plate_inst = -1; // If it is holding a plate we need to know the inst of that on
 chop_timer = -1;
 chop_progress_percentage = 0;
 currently_chopping = false;
+control_chop_sound = false;
 

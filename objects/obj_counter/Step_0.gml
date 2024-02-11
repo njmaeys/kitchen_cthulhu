@@ -17,10 +17,12 @@ if currently_holding == -1
 	counter_place_item();
 }
 else {
-	if !currently_chopping {
+	if not currently_chopping {
 		counter_take_item();
 	}
+	
 	counter_chop_item();
+
 	
 	if plate_inst != -1 {
 		plate_inst.x = self.x + 6;
@@ -28,6 +30,25 @@ else {
 		
 		counter_place_item();
 	}
+}
+
+
+
+// Chopping Sound
+if control_chop_sound
+	and currently_chopping
+{
+	if not audio_is_playing(snd_chop) {
+		audio_play_sound(
+			snd_chop,
+			1,
+			true,
+			1,
+			0,
+			1.5
+		);
+	}
+
 }
 
 

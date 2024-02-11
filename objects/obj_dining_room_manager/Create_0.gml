@@ -13,3 +13,11 @@ leave_x = obj_exit_spot.x;
 leave_y = obj_exit_spot.y;
 
 
+// Background music start
+if not audio_is_playing(snd_temp_background) {
+	audio_play_sound(
+		snd_temp_background,
+		1,
+		true
+	);
+}
