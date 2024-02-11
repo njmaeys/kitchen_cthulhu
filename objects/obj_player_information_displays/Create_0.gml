@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
 
 depth = obj_game_manager.depth_menus;
 
@@ -18,3 +17,7 @@ num_orders_succeeded = 0;
 num_orders_failed = 0;
 money_earned_today = 0;
 cthulhu_money_earned_today = 0;
+
+// Fear tracking
+current_fear_x = -1;
+current_fear_y = -1;

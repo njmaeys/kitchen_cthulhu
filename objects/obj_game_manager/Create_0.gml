@@ -48,5 +48,12 @@ current_money = 0;
 current_cthulhu_money = 0;
 
 
+// Fear tracking
+fear_max = 100;
+fear_current = 0;
+fear_increase_step = 10; // How much to increase by each time
+
+
 // For drawing the menus this depth needs to be the menu depth
 depth = depth_menus;
+

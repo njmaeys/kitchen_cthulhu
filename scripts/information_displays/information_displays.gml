@@ -6,6 +6,7 @@ function draw_cook_queue(){
 		
 				
 			var _queue_item_x = cook_order_queue_x;	
+
 		
 			// Draw the container
 			draw_sprite_stretched(
@@ -15,7 +16,19 @@ function draw_cook_queue(){
 				cook_order_queue_y,
 				68,
 				20
-			);		
+			);	
+			
+			// Draw the wait progression of the bar
+			draw_sprite_stretched_ext(
+				spr_progress_meter_danger,
+				0,
+				_queue_item_x + 3,
+				cook_order_queue_y + 3,
+				62 * (_npc.wait_progress_percentage / 100),
+				14,
+				c_white,
+				0.75
+			);
 
 			for (var _s = 0; _s < array_length(_npc.queue_display); _s += 1) {
 				var _spr = _npc.queue_display[_s];
@@ -79,4 +92,19 @@ function draw_day_timer() {
 		_progress_bar_increase_width,
 		5
 	);
+}
+
+function draw_fear_displays() {
+	draw_sprite_ext(
+		spr_cthulhu_icon_fear_progress,
+		0,
+		current_fear_x,
+		current_fear_y,
+		1,
+		1,
+		0,
+		c_white,
+		obj_game_manager.fear_current / obj_game_manager.fear_max
+	);
+
 }

@@ -69,6 +69,7 @@ function burger_order_collision_verification() {
 			else {
 				order_successful = false;
 				obj_player_information_displays.num_orders_failed += 1;
+				obj_game_manager.fear_current += obj_game_manager.fear_increase_step;
 			}
 		
 			// Regardless of order outcome remove the item from the dining list
@@ -84,4 +85,22 @@ function burger_order_collision_verification() {
 }
 
 
+function wait_timer_ran_out() {
+	for (var _i = 0; _i < array_length(obj_dining_room_manager.dining_currently); _i += 1) {
+		var _item = obj_dining_room_manager.dining_currently[_i];
+	
+		if _item == id {
+			order_successful = false;
+			obj_player_information_displays.num_orders_failed += 1;
+			obj_game_manager.fear_current += obj_game_manager.fear_increase_step;
 
+			array_delete(
+				obj_dining_room_manager.dining_currently,
+				_i,
+				1
+			);
+
+			break;
+		}
+	}
+}

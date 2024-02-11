@@ -119,6 +119,14 @@ function progress_to_next_day() {
 	}
 	
 	// Go to the end of day room
-	room_goto(rm_end_of_day);
+	if not instance_exists(obj_fade) {
+		instance_create_depth(
+			0,
+			0,
+			obj_game_manager.depth_menus,
+			obj_fade,
+			{target_room: rm_end_of_day}
+		);
+	}
 }
 
